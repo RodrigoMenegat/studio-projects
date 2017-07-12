@@ -4,7 +4,7 @@ layout: default
 
 ---
 
-# Hi, I'm YOUR NAME HERE
+# Rodrigo Menegat - data journalist, kind of
 
 This is my site of projects for the [Lede Program](http://ledeprogram.com)
 
