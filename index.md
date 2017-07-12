@@ -1,0 +1,1 @@
+# I am Rodrigo Menegat and I try to do cool things with code and data and journalism.
