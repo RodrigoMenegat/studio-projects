@@ -1,0 +1,42 @@
+.container {
+  width: 750px;
+  color: #333;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  font-family: Georgia, sans-serif;
+  position: relative;
+}
+
+#nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+li {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  background: #bdffc5;
+  padding: 3px 6px;
+  color: #000;
+}
