@@ -1,0 +1,2 @@
+# LATEST SHAPEFILES - Probably mine is an older version
+http://download.geofabrik.de/south-america/brazil-latest-free.shp.zip
