@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Inconsolata|Nunito|Nunito+Sans|Pacifico|Quicksand|Roboto|Rubik|VT323" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>In Brazilian streets, memories of the dictatorship still linger</title>
+  </head>
+
+  <body>
+  <div id = header>
+    <h1 class='top-header'>In Brazilian streets, memories of the dictatorship still linger </h1>
+    <h2 class='linha-fina'>Streets named after leaders of the 21 years long authoritarian regime are present in 25 of the 26 states</h2>
+    <h2 class ='author'><br>RODRIGO MENEGAT</h2>
+  </div>
+
+  <div id=textblock>
+    <p>For less than 200 meters, a street in the central region of S&atilde;o Paulo, Brazil&rsquo;s biggest city, is named &lsquo;Vladimir Herzog Street&rsquo;. It remembers <a href = "https://en.wikipedia.org/wiki/Vladimir_Herzog" target="_blank">a journalist that was tortured and killed</a> by the <a href="https://en.wikipedia.org/wiki/Brazilian_military_government" target="_blank">Military Dictatorship</a>&ndash; an authoritarian regime that ruled the country for 21 years, from 1964 to 1985.</p>
+    <p>The starting point of the <a href="https://en.wikipedia.org/wiki/Humberto_de_Alencar_Castelo_Branco" target="_blank">President Castelo Branco</a> Avenue, part of a major road complex that cuts through the same metropolis from east to west, is located less than 500 meters away. It&rsquo;s named after the general who took power in the <a href="https://en.wikipedia.org/wiki/1964_Brazilian_coup_d%27%C3%A9tat" target="_blank">Coup of 1964</a> &ndash; or the Revolution of 1964, as the supporters of the regime prefer to call it. He helped start the process that, ultimately, was responsible for Vladimir Herzog&rsquo;s death.</p>
+    <p>The coexistence of homages to such different historical figures so close together is not something exceptional. Throughout the Brazilian territory, many streets are named after officials and collaborators of the military junta – even after those that are among the 377 people that, according to the <a href="https://en.wikipedia.org/wiki/National_Truth_Commission" target="_blank">National Truth Commission</a>, a committee that investigated the state crimes committed during that period, <a href="https://www.nytimes.com/2014/12/11/world/americas/torture-report-on-brazilian-dictatorship-is-released.html" target="_blank">were responsible for torture and extra-judicial executions.</a></p>
+    <p>The army&rsquo;s junta was deemed responsible for the murder or disappearance of at least 434 opponents of the regime. Even though the number of victims is greater than the number of state criminals, the homages to the missing and killed are far outnumbered. While the summed length of all the streets named after the first is around 160km, the streets named after the second run for approximately 2000km.
+    <p>As Brazilian society <a href="https://www.economist.com/news/americas/21636059-investigation-human-rights-abuses-names-culprits-far-too-late-final-reckoning" target="_blank">still tries to grasp what happened during those &ldquo;lead years&rdquo;</a>, we tried to map all the streets named after state criminals (in green) and their victims (in red) listed in the final National Truth Commission report. You can click in any of the streets to read a short biography of the person which it refers to.</p>
+    <p>The result shows how widespread those homages are, sprawling through 25 of the 26 Brazilian states &ndash; all but the Distrito Federal, site of the national capital, Bras&iacute;lia, a planned city where the streets have numerical codes as their names.</p>
+    <p>In this endeavor, we used data published by OpenStreetMap, a collaborative wiki-like project in which every user can add and update information about places and addresses.&nbsp;</p>
+    <p>Although the database is not perfect (there are inconsistencies in the standardization of some names and, most importantly, some of the major streets are represented by more than one entry), after an intensive cleaning effort, we feel secure enough to claim that the map is an accurate representation of reality.</p>
+    <p>If you want to check how the entire process was done, a step-by-step description is available <a href="https://github.com/RodrigoMenegat/studio-projects/tree/master/code/brazil-dictatorship-streets" target="_blank"> here</a>. Due to the ever-changing nature of urban landscapes, feel free (and encouraged) to send every update, correction or any sort of feedback you can think of.</p>
+    <p>It&rsquo;s also important to note that, due to the occurrence of very common names and homonyms, some street names may not always refer to the right people. This is the case of Jos&eacute; de Souza and Jos&eacute; de Oliveira, two of the victims of the dictatorship, for instance. Even though their names are present in more than one hundred streets, it&rsquo;s unlikely that all of those refer specifically to them.</p>
+    <p>The same goes for streets named after Ant&ocirc;nio Bandeira, which could be paying homage to an official that personally participated in torture sessions or to a famous Brazilian artist &ndash; and are much more likely to be the second case.</p>
+    <p>Those particular people were identified, nevertheless, with a disclaimer in the tooltips of their respective streets.</p>
+    </div>
+        <select id="select-menu">
+            
+             <option value="0">Criminosos e vítimas</option>
+             <option value="1">Mortos e desaparecidos</option>
+             <option value="2">Criminosos do estado</option>
+ </select>
+
+<div id='map'>THERE IS SOME CRAP HERE</div>
+
+<script type="text/javascript" src="streets.js"></script>
+
+<script type="text/javascript">
+
+  var map = L.map('map').setView([-15.530552, -47.876554], 4);
+
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    minZoom: 3,
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+      '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    id: 'mapbox.light'
+  }).addTo(map);
+
+  // control that shows state info on hover
+  var info = L.control();
+
+  info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info.update = function (props) {
+    this._div.innerHTML = '<h2>Nas ruas do Brasil, a ditadura ainda vive</h2>' + "43 anos depois do golpe militar que suspendeu a democracia no país<br>por duas décadas, ruas nomeadas em homenagem aos criminosos do<br>regime, em verde, são muito mais comuns do que as que fazem referência<br>aos mortos e desaparecidos, representadas em vermelho.<br>" + (props ?
+      '<br><b>' + props.name + '</b><br />' + props.city + ', ' + props.state 
+            : '<br>Clique em uma rua para aprender sobre o homenageado');
+  };
+
+  info.addTo(map);
+
+  // get color depending on population density value
+
+  function style(feature) {
+    return {
+      weight: 3,
+      opacity: 0.9,
+      color: feature.properties.color,
+      dashArray: '0',
+      fillOpacity: 1,
+      fillColor: 'None'
+    };
+  }
+
+  function highlightFeature(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+      weight: 5,
+      color: '#666',
+      dashArray: '',
+      fillOpacity: 0.7
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      layer.bringToFront();
+    }
+
+    info.update(layer.feature.properties);
+  }
+  function updateArticle(e) {
+    var layer = e.target;
+    var props = layer.feature.properties;
+    var articleDIV = document.getElementById("articlePlace");
+    articleDIV.innerHTML = props.article
+  }
+
+  var geojson;
+
+  function resetHighlight(e) {
+    geojson.resetStyle(e.target);
+    info.update();
+  }
+
+//  function zoomToFeature(e) {
+//    map.fitBounds(e.target.getBounds());
+//  }
+
+  function onEachFeature(feature, layer) {
+    layer.on({
+      mouseover: highlightFeature,
+      mouseout: resetHighlight,
+      click: layer.bindPopup("<b>" + feature.properties.name + "</b><br>" +
+      feature.properties.desc)
+    });
+  }
+
+  geojson = L.geoJson(streets, {
+    style: style,
+    onEachFeature: onEachFeature
+  }).addTo(map);
+
+  </script>
+
+  <script>
+  $(document).ready(function () {
+// this entire function Controls everything for the drop down menu
+// you need to figure out how to change the text  
+      $('#select-menu').change(function () {
+    var selectedGroup = $('#select-menu').val();
+    
+    geojson.eachLayer(function (layer) {
+      if (selectedGroup == 0)
+        {
+          map.addLayer(layer);
+        } else if (layer.feature.properties.code != selectedGroup) {
+      // If the layer's id is different from the selected one, remove it from the map
+      map.removeLayer(layer);
+        }
+        else {
+      // Otherwise add it do the map
+      map.addLayer(layer);
+        }
+    });
+
+  });
+  });
+</script>
+  <div id=textblock>
+    <p><strong>NARROWS ALLEYS AND MAJOR HIGHWAYS</strong></p>
+    <p>Not only the streets named after generals and officials are in a higher number than those named after their victims, there is also an important geographical difference between them.</p>
+    <p>While major roads like the aforementioned Castelo Branco Avenue and the Costa e Silva Bridge (mostly known as Rio-Niter&oacute;i Bridge, in Rio de Janeiro) remember the regime, the homages to dissidents tend to concentrate in peripherical and poorer areas.</p>
+    <p>Some places that remember the military leaders were named still during the regime, referencing the junta while it was still on power. In contrast, the addresses that recall the missing and killed only started to appear after the end of the regime, due to efforts made by different sectors of civil society.</p>
+    <p>The city of S&atilde;o Paulo, where the Castelo Branco Avenue and the Vladimir Herzog Street lie so close together, is a good example of this contrast. It is one of the places in the country with more homages to the victims of the regime, but the location of those tells a story by itself.</p>
+    <p>Most of them are clustered in poorer areas of the northern and southern regions of the municipality, in the neighborhoods of Graja&uacute; and Jova Rural, respectively. The same happens in Rio de Janeiro, where the streets named after the resistance against the dictatorship tend to concentrate in the working-class neighborhood of Bangu.</p>
+    <a href="sp-big.jpg" target="_blank"><img src="sp.jpg"></a>
+    <a href="rj-big.jpg" target="_blank"><img src="rj.jpg"></a>
+    <p class = legend>Click images to open them in higher definition.</p>
+    <p><strong>CHANGING NAMES</strong></p>
+    <p>In the center of S&atilde;o Paulo, an overpass runs for around 3.5km, crossing four different neighborhoods. Popularly known as &ldquo;Minhoc&atilde;o&rdquo; (&ldquo;Big Worm&rdquo;) for it&rsquo;s length and appearance, this controversial urban intervention was officially called &ldquo;Elevated Highway Costa e Silva&rdquo;, referencing the second president of the Military Dictatorship, since it was finished, in 1970, until 2016.</p>
+    <p>In mid-2016, though, the name was changed to &ldquo;Elevated Highway <a href="https://en.wikipedia.org/wiki/Jo%C3%A3o_Goulart" target="_blank">President Jo&atilde;o Goulart</a>&rdquo;, honoring the last civil leader to rule the country before the army took power in 1964.</p>
+    <p>This change is part of a movement that happens as Brazilian institutions look back to the conflicts of the past and try do decide how it will reflect on their present and future. Although President Goulart was persecuted and lost his political rights during the military regime, he was not considered a victim of human rights violations. Nevertheless, Paulo Stuart Wright was.</p>
+    <p>A former house representative in the state of Santa Catarina, Wright was persecuted by the military ever since the beginning of the regime. He lost his political rights and left the country to live in Mexico in 1964, only to return clandestinely in the next year, as a militant of a left-wing underground group. He disappeared in 1973, and his killing was only confirmed when secret military files were opened eleven years later, close to the end of the junta&rsquo;s government. In 2015, his memory, as well, was honored, when a highway in his state was named after him.</p>
+    <p><strong>A CONFLICT IN THE OPEN</strong></p>
+    <p>In one of the most dramatic moments of Brazilian politics in the last few years, the former president Dilma Rousseff, from the left-leaning Workers Party, was impeached in a process that started on the House of Representatives. In the night between the 16<sup>th</sup> and 17<sup>th</sup> of April, 2016, she lost the vote and was outed from office. At that time, the removal was supposed to last only until the end of the process that would then follow to the Senate, but eventually proved to be a path of no return.</p>
+    <p>Jair Bolsonaro, a former army captain and one of the most preeminent figures in the Brazilian far-right, was among the representatives that voted against Dilma &ndash; and he did that in a very controversial way.</p>
+    <p>&ldquo;They lost in 1964 and lost again in 2016&rdquo;, he said, comparing the military coup of the 60s and the recent impeachment. &ldquo;For the memory of <a href="https://en.wikipedia.org/wiki/Carlos_Alberto_Brilhante_Ustra" target="_blank">Colonel Carlos Alberto Brilhante Ustra</a>, the terror of Dilma Rousseff [&hellip;] I vote yes [to the impeachment]&rdquo;.</p>
+    <p>Bolsonaro was paying homage to the man in charge of the DOI-CODI in the state of S&atilde;o Paulo, the military regime intelligence agency, from 1970 to 1974. Even though Ustra, who died free and claiming to have &ldquo;no regrets&rdquo; two years ago, always denied the practice of torture and executions under his supervision, he is widely recognized as one of <a href="http://www.bbc.com/news/world-latin-america-34546418" target="_blank">the most violent officials of the dictatorship repressive forces.</a></p>
+    <p>His victims described being tormented with many different methods, including electric shocks and the insertion of live mice inside female prisoner&rsquo;s vaginas. In some of the most brutal cases, those sessions were held in front of the loved ones of the dissidents, including their children. Dilma Rousseff herself spend months detained in the prisons of the DOI-CODI in the early 70s.</p>
+    <p>Bolsonaro&rsquo;s statement sparked controversy and shock, but his popularity seems to stand unabated. He is currently <a href="http://plus55.com/brazil-politics/2017/05/lula-bolsonaro-front-polls-2018-elections" target="_blank">third in most electoral polls</a>, only behind Marina Silva, who competed in the last two elections but never made it to the second round, and the Workers Party leader and Dilma&rsquo;s political godfather, Lula da Silva, who served as president from 2003 to 2010 and was himself arrested during the military regime.</p>
+    <p>Apart from Boslonaro&rsquo;s popularity rise, in recent years <a href="https://www.nytimes.com/2016/05/03/opinion/in-brazil-a-new-nostalgia-for-military-dictatorship.html" target="_blank">movements that advocate for another &ldquo;military intervention&rdquo; have grown vocal</a>. Some groups took to the streets regularly, especially during the protests against Dilma Rousseff&rsquo;s government, demanding that the armed forces &ldquo;save the country once again from communism&rdquo;&ndash; evocating the rhetoric used by the army to justify the coup that hapenned 43 years ago.</p>
+    <p>Even if it&rsquo;s hard to measure the actual relevance of those organizations, &ndash; the army commander-in-chief, Eduardo Villas-Boas, called sympathizers of this idea &ldquo;crazy&rdquo;&ndash; it goes to show that more than twenty years after the end of the regime, part of the population seems to look back to the dictatorship and see an answer for their problems and fears.</p>
+    <p>To say that there is a clear connection between all the lingering homages to the dictatorship and this movements is, indeed, a huge leap. Nevertheless, it&rsquo;s one more evidence that the past is not only confined in street names, but regularly resurfaces again.</p>
+    </div>
+</body>
+</html>
