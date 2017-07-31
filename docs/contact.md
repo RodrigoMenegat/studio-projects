@@ -4,4 +4,4 @@ title: Contact me
 
 ---
 
-* [user@example.com](mailto:rodrigoschuinski@gmail.com)
+* [rodrigoschuinski@gmail.com](mailto:rodrigoschuinski@gmail.com)
