@@ -15,14 +15,12 @@ layout: project
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>In Brazilian streets, memories of the dictatorship still linger</title>
   </head>
-
   <body>
   <div id = header>
     <h1 class='top-header'>In Brazilian streets, memories of the dictatorship still linger </h1>
     <h2 class='linha-fina'>Streets named after leaders of the 21 years long authoritarian regime are present in 25 of the 26 states</h2>
     <h2 class ='author'><br>RODRIGO MENEGAT</h2>
   </div>
-
   <div id=textblock>
     <p>For less than 200 meters, a street in the central region of S&atilde;o Paulo, Brazil&rsquo;s biggest city, is named &lsquo;Vladimir Herzog Street&rsquo;. It remembers <a href = "https://en.wikipedia.org/wiki/Vladimir_Herzog" target="_blank">a journalist that was tortured and killed</a> by the <a href="https://en.wikipedia.org/wiki/Brazilian_military_government" target="_blank">Military Dictatorship</a>&ndash; an authoritarian regime that ruled the country for 21 years, from 1964 to 1985.</p>
     <p>The starting point of the <a href="https://en.wikipedia.org/wiki/Humberto_de_Alencar_Castelo_Branco" target="_blank">President Castelo Branco</a> Avenue, part of a major road complex that cuts through the same metropolis from east to west, is located less than 500 meters away. It&rsquo;s named after the general who took power in the <a href="https://en.wikipedia.org/wiki/1964_Brazilian_coup_d%27%C3%A9tat" target="_blank">Coup of 1964</a> &ndash; or the Revolution of 1964, as the supporters of the regime prefer to call it. He helped start the process that, ultimately, was responsible for Vladimir Herzog&rsquo;s death.</p>
@@ -37,17 +35,13 @@ layout: project
     <p>The same goes for streets named after Ant&ocirc;nio Bandeira, which could be paying homage to an official that personally participated in torture sessions or to a famous Brazilian artist &ndash; and are much more likely to be the second case.</p>
     <p>Those particular people, nevertheless, don't alter the overall figure.</p>
     </div>
-        <select id="select-menu">
-            
+        <select id="select-menu">            
              <option value="0">Criminosos de estado, mortos e desaparecidos</option>
              <option value="1">Mortos e desaparecidos</option>
              <option value="2">Criminosos do estado</option>
- </select>
-
+     </select>
 <div id='map'></div>
-
 <script type="text/javascript" src="streets.js"></script>
-
 <script type="text/javascript">
 
   var map = L.map('map').setView([-15.530552, -47.876554], 4);
@@ -138,7 +132,6 @@ layout: project
   }).addTo(map);
 
   </script>
-
   <script>
   $(document).ready(function () {
 // this entire function Controls everything for the drop down menu
@@ -170,7 +163,6 @@ layout: project
     <p>The city of S&atilde;o Paulo, where the Castelo Branco Avenue and the Vladimir Herzog Street lie so close together, is a good example of this contrast. It is one of the places in the country with more homages to the victims of the regime, but the location of those tells a story by itself.</p>
     <p>Most of them are clustered in poorer areas of the northern and southern regions of the municipality, in the neighborhoods of Graja&uacute; and Jova Rural, respectively. The same happens in Rio de Janeiro, where the streets named after the resistance against the dictatorship tend to concentrate in the working-class neighborhood of Bangu.</p>
     <p>A great ammount of the places that remember the military leaders were named still during the regime, referencing the junta while it was still on power. In contrast, the addresses that recall the missing and killed only started to appear after the end of the regime, due to efforts made by different sectors of civil society.</p>
-
     <a href="sp-big.jpg" target="_blank"><img src="sp.jpg"></a>
     <a href="rj-big.jpg" target="_blank"><img src="rj.jpg"></a>
     <p class = legend>Click images to open them in higher definition.</p>
