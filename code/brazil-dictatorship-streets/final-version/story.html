@@ -22,7 +22,7 @@
     <p>For less than 200 meters, a street in the central region of S&atilde;o Paulo, Brazil&rsquo;s biggest city, is named &lsquo;Vladimir Herzog Street&rsquo;. It remembers <a href = "https://en.wikipedia.org/wiki/Vladimir_Herzog" target="_blank">a journalist that was tortured and killed</a> by the <a href="https://en.wikipedia.org/wiki/Brazilian_military_government" target="_blank">Military Dictatorship</a>&ndash; an authoritarian regime that ruled the country for 21 years, from 1964 to 1985.</p>
     <p>The starting point of the <a href="https://en.wikipedia.org/wiki/Humberto_de_Alencar_Castelo_Branco" target="_blank">President Castelo Branco</a> Avenue, part of a major road complex that cuts through the same metropolis from east to west, is located less than 500 meters away. It&rsquo;s named after the general who took power in the <a href="https://en.wikipedia.org/wiki/1964_Brazilian_coup_d%27%C3%A9tat" target="_blank">Coup of 1964</a> &ndash; or the Revolution of 1964, as the supporters of the regime prefer to call it. He helped start the process that, ultimately, was responsible for Vladimir Herzog&rsquo;s death.</p>
     <p>The coexistence of homages to such different historical figures so close together is not something exceptional. Throughout the Brazilian territory, many streets are named after officials and collaborators of the military junta – even after those that are among the 377 people that, according to the <a href="https://en.wikipedia.org/wiki/National_Truth_Commission" target="_blank">National Truth Commission</a>, a committee that investigated the state crimes committed during that period, <a href="https://www.nytimes.com/2014/12/11/world/americas/torture-report-on-brazilian-dictatorship-is-released.html" target="_blank">were responsible for torture and extra-judicial executions.</a></p>
-    <p>The army&rsquo;s junta was deemed responsible for the murder or disappearance of at least 434 opponents of the regime. Even though the number of victims is greater than the number of state criminals, the homages to the missing and killed are far outnumbered. While the summed length of all the streets named after the former is around 160km, the streets named after the latter run for approximately 2000km.
+    <p>The army&rsquo;s junta was deemed responsible for the murder or disappearance of at least 434 opponents of the regime. Even though the number of victims is greater than the number of state criminals, the homages to the missing and killed are far outnumbered. While the summed length of all the streets named after the first is around 160km, the streets named after the second run for approximately 2000km.
     <p>As Brazilian society <a href="https://www.economist.com/news/americas/21636059-investigation-human-rights-abuses-names-culprits-far-too-late-final-reckoning" target="_blank">still tries to grasp what happened during those &ldquo;lead years&rdquo;</a>, we tried to map all the streets named after state criminals (in green) and their victims (in red) listed in the final National Truth Commission report. You can click in any of the streets to read a short biography of the person which it refers to.</p>
     <p>The result shows how widespread those homages are, sprawling through 25 of the 26 Brazilian states &ndash; all but the Distrito Federal, site of the national capital, Bras&iacute;lia, a planned city where the streets have numerical codes as their names.</p>
     <p>In this endeavor, we used data published by OpenStreetMap, a collaborative wiki-like project in which every user can add and update information about places and addresses.&nbsp;</p>
@@ -30,11 +30,11 @@
     <p>If you want to check how the entire process was done, a step-by-step description is available <a href="https://github.com/RodrigoMenegat/studio-projects/tree/master/code/brazil-dictatorship-streets" target="_blank"> here</a>. Due to the ever-changing nature of urban landscapes, feel free (and encouraged) to send every update, correction or any sort of feedback you can think of.</p>
     <p>It&rsquo;s also important to note that, due to the occurrence of very common names and homonyms, some street names may not always refer to the right people. This is the case of Jos&eacute; de Souza and Jos&eacute; de Oliveira, two of the victims of the dictatorship, for instance. Even though their names are present in more than one hundred streets, it&rsquo;s unlikely that all of those refer specifically to them.</p>
     <p>The same goes for streets named after Ant&ocirc;nio Bandeira, which could be paying homage to an official that personally participated in torture sessions or to a famous Brazilian artist &ndash; and are much more likely to be the second case.</p>
-    <p>Those particular people were identified, nevertheless, with a disclaimer in the tooltips of their respective streets.</p>
+    <p>Those particular people, nevertheless, don't alter the overall figure.</p>
     </div>
         <select id="select-menu">
             
-             <option value="0">Criminosos e vítimas</option>
+             <option value="0">Criminosos de estado, mortos e desaparecidos</option>
              <option value="1">Mortos e desaparecidos</option>
              <option value="2">Criminosos do estado</option>
  </select>
@@ -67,7 +67,7 @@
 
   info.update = function (props) {
     this._div.innerHTML = '<h2>Nas ruas do Brasil, a ditadura ainda vive</h2>' + "43 anos depois do golpe militar que suspendeu a democracia no país<br>por duas décadas, ruas nomeadas em homenagem aos criminosos do<br>regime, em verde, são muito mais comuns do que as que fazem referência<br>aos mortos e desaparecidos, representadas em vermelho.<br>" + (props ?
-      '<br><b>' + props.name + '</b><br />' + props.city + ', ' + props.state 
+      '<br><b>' + props.name + '</b><br />CIDADE: ' + props.city  
             : '<br>Clique em uma rua para aprender sobre o homenageado');
   };
 
@@ -162,9 +162,10 @@
     <p><strong>NARROWS ALLEYS AND MAJOR HIGHWAYS</strong></p>
     <p>Not only the streets named after generals and officials are in a higher number than those named after their victims, there is also an important geographical difference between them.</p>
     <p>While major roads like the aforementioned Castelo Branco Avenue and the Costa e Silva Bridge (mostly known as Rio-Niter&oacute;i Bridge, in Rio de Janeiro) remember the regime, the homages to dissidents tend to concentrate in peripherical and poorer areas.</p>
-    <p>Some places that remember the military leaders were named still during the regime, referencing the junta while it was still on power. In contrast, the addresses that recall the missing and killed only started to appear after the end of the regime, due to efforts made by different sectors of civil society.</p>
     <p>The city of S&atilde;o Paulo, where the Castelo Branco Avenue and the Vladimir Herzog Street lie so close together, is a good example of this contrast. It is one of the places in the country with more homages to the victims of the regime, but the location of those tells a story by itself.</p>
     <p>Most of them are clustered in poorer areas of the northern and southern regions of the municipality, in the neighborhoods of Graja&uacute; and Jova Rural, respectively. The same happens in Rio de Janeiro, where the streets named after the resistance against the dictatorship tend to concentrate in the working-class neighborhood of Bangu.</p>
+    <p>A great ammount of the places that remember the military leaders were named still during the regime, referencing the junta while it was still on power. In contrast, the addresses that recall the missing and killed only started to appear after the end of the regime, due to efforts made by different sectors of civil society.</p>
+
     <a href="sp-big.jpg" target="_blank"><img src="sp.jpg"></a>
     <a href="rj-big.jpg" target="_blank"><img src="rj.jpg"></a>
     <p class = legend>Click images to open them in higher definition.</p>
