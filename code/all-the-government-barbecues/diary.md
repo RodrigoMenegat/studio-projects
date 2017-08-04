@@ -7,7 +7,7 @@ The files were downloaded from the [Portal da Transparência](http://www.portald
 All the .csv files were concatenated using a Python script, avaliable in the beginning of the following notebook.
 There was a single bad row in the whole datasets: row 27388 of file 201010_CPGF.csv.
 I manually corrected it. There was an extra separator in the last field.
-After the concatenation process was done, I saved the merged database into a single file: 'CPGF_2010_to_2017_july.csv'
+After the concatenation process was done, I saved the merged database into a single file: 'CPGF_2010_to_2017_july.csv'. It was too big to upload into the repo, but you cand download it [here](https://drive.google.com/file/d/0B6khFsxSwoi2cHEwZDNaM3MxMUU/view)
 
 ### 3. Data cleaning
 During the analysis, I found that six instances of the date string were wrong. They were saying '2000' when they should say 2010. I corrected them. See the analysis notebook for details.
