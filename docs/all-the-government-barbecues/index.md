@@ -7,7 +7,7 @@ Since December of 2009, when all the expenses paid with government-sponsored cre
 
 Usually, a meal on a ‘churrascaria’ costs twice or more than in other sort of establishments. On total, around R$ 1,2 million – an amount equivalent to US$ 385,000 – was spent on those restaurants. 
 
-<img src="barbecues-small.jpg">
+<img style="align-items: center;" src="barbecues-small.jpg">
 
 The greatest part of those expenses came from army personnel and staffers from the Ministry of Defense. Indeed, some of the restaurants that received the most money are located near highways, which suggests that officials might be going there to eat during duty travels. Nevertheless, there are many examples of extravagant dinners as well.
 
