@@ -7,7 +7,7 @@ Since December of 2009, when all the expenses paid with government-sponsored cre
 
 Usually, a meal on a ‘churrascaria’ costs twice or more than in other sort of establishments. On total, around R$ 1,2 million – an amount equivalent to US$ 385,000 – was spent on those restaurants. 
 
-<img style="float: center;" src="barbecue-small.jpg">
+<img src="barbecue-small.jpg">
 
 The greatest part of those expenses came from army personnel and staffers from the Ministry of Defense. Indeed, some of the restaurants that received the most money are located near highways, which suggests that officials might be going there to eat during duty travels. Nevertheless, there are many examples of extravagant dinners as well.
 
@@ -28,7 +28,7 @@ There are a few exceptions, such as purchases made during a state of public cala
 
 Since 2010, over-the-cap purchases were made 2297 times – and out of those, 2277 cases were deemed confidential to “ensure the safety of the society and the State”. Of the remaining 20 purchases, 17 came, again, from staffers of the Ministry of Defense. The payments were made in automobile parts and computer applicances stores, supermarkets, an internet provider and hotels.
 
-<img style="float: right;" src="sigilo-small.jpg">
+<img style="float: left;" src="sigilo-small.jpg">
 
 ### BLACK BOX
 Those questionable expenses can be linked to a broader lack of transparency. Even though all the purchases made with government credit-cards are supposedly available for public scrutiny online, more than 60% those payments are, by all practical means, untraceable.
