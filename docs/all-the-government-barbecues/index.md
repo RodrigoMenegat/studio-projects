@@ -7,6 +7,8 @@ Since December of 2009, when all the expenses paid with government-sponsored cre
 
 Usually, a meal on a ‘churrascaria’ costs twice or more than in other sort of establishments. On total, around R$ 1,2 million – an amount equivalent to US$ 385,000 – was spent on those restaurants. 
 
+![barbecues](barbecues-small.jpg)
+
 The greatest part of those expenses came from army personnel and staffers from the Ministry of Defense. Indeed, some of the restaurants that received the most money are located near highways, which suggests that officials might be going there to eat during duty travels. Nevertheless, there are many examples of extravagant dinners as well.
 
 In the most recent case, between July 6 and July 10 of 2017, cardholders from the Ministry of Defense’s administrative office went three times to “Fogo de Chão”, a luxurious steakhouse of worldwide fame located in Brasília, the federal capital. In the sum of those, approximately R$ 8600 were spent – an amount sufficient for 62 people to enjoy a pricey R$ 120 (US$ 38) dinner.
@@ -16,8 +18,6 @@ In contrast, the average monthly per-capita income of a Brazilian household in 2
 Talking about the IBGE, it was responsible for some curious purchases as well: between March 2014 and March 2015, a unit of the institution made thirteen payments to an establishment called “Disk-Cerveja” – a beer home-delivery hotline.
 
 The government-sponsored credit cards, officially named Federal Government Payment Card (CPFG, in the Portuguese acronym), were originally created to make it easier for public officials to buy supplies in exceptional cases, when submitting the purchases to a board approval process would take an unreasonable amount of time.
-
-![barbecues](barbecues-small.jpg)
 
 ### BREAKING THE LAW
 Apart from the questionable nature of expenses with luxury dining and booze delivery, staffers of the public sector that made purchases above R$ 8000 for their agencies possibly broke the Brazilian bidding law. 
