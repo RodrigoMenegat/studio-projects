@@ -23,7 +23,7 @@ Talking about the IBGE, it was responsible for some curious purchases as well: b
 
 The government-sponsored credit cards, officially named Federal Government Payment Card (CPFG, in the Portuguese acronym), were originally created to make easier for public officials to buy supplies in exceptional cases when submitting the purchases to a board approval process would take an unreasonable amount of time.
 
-![barbecues](barbecues.jpg = 1800x1618)
+![barbecues](barbecues.jpg =1800x1618)
 
 ### BREAKING THE LAW
 Apart from the expenses with luxury dining and booze delivery, staffers of the public sector that made purchases above R$ 8000 for their agencies possibly broke the Brazilian bidding law. 
@@ -34,7 +34,7 @@ There are a few exceptions, such as states of public calamity and the acquisitio
 
 Since 2010, over-the-cap purchases were made 2297 times – and out of those, 2277 cases were deemed confidential to “ensure the safety of the society and the State”. Of the remaining 20 purchases, 17 came, again, from staffers of the Ministry of Defense. The expenses were made in stores of automobile parts, supermarkets, computer appliances, an internet provider and hotels.
 
-![confidential](sigilo.jpg = 1800x809)
+![confidential](sigilo.jpg =1800x809)
 
 ### BLACK BOX
 Those questionable expenses can be linked to a broader lack of transparency. Even though all the purchases made with government credit-cards are supposedly available for online, more than 60% those payments are, by all practical means, untraceable.
