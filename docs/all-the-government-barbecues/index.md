@@ -5,7 +5,7 @@ layout: project
 ---
 
 # Since 2010, Brazilian officials ate two steakhouse dinners per day with public money
-### RODRIGO MENEGAT
+#### RODRIGO MENEGAT
 
 In the last seven years, Brazilian public funds were used to pay for, on average, two barbecue meals every day.
 
@@ -23,9 +23,9 @@ Talking about the IBGE, it was responsible for some curious purchases as well: b
 
 The government-sponsored credit cards, officially named Federal Government Payment Card (CPFG, in the Portuguese acronym), were originally created to make easier for public officials to buy supplies in exceptional cases when submitting the purchases to a board approval process would take an unreasonable amount of time.
 
-![barbecues](barbecues.jpg "All the government barbecues")
+![barbecues](barbecues.jpg = 1800x1618)
 
-**BREAKING THE LAW**
+### BREAKING THE LAW
 Apart from the expenses with luxury dining and booze delivery, staffers of the public sector that made purchases above R$ 8000 for their agencies possibly broke the Brazilian bidding law. 
 
 According to it, all the acquisitions that surpass this cap should undergo a full bidding process, in which companies would compete to provide the best possible price. 
@@ -34,9 +34,9 @@ There are a few exceptions, such as states of public calamity and the acquisitio
 
 Since 2010, over-the-cap purchases were made 2297 times – and out of those, 2277 cases were deemed confidential to “ensure the safety of the society and the State”. Of the remaining 20 purchases, 17 came, again, from staffers of the Ministry of Defense. The expenses were made in stores of automobile parts, supermarkets, computer appliances, an internet provider and hotels.
 
-![confidential](sigilo.jpg "Most expenses that may violate bidding law are secret")
+![confidential](sigilo.jpg = 1800x809)
 
-**BLACK BOX**
+### BLACK BOX
 Those questionable expenses can be linked to a broader lack of transparency. Even though all the purchases made with government credit-cards are supposedly available for online, more than 60% those payments are, by all practical means, untraceable.
 
 This happens because around R$ 220 million were deemed confidential by the government for national security issues.
