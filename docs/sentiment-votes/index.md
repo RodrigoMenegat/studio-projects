@@ -25,6 +25,6 @@ What is an angry word, though? The calculations were made using a dictionary tha
 
 Results should be taken with a grain of salt, though: since we are evaluating standalone words, the measure will overlook more complex usages of language such as irony, contempt or hidden threats.
 
-Note: push 4
+Note: push 6
 
 
