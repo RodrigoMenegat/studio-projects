@@ -1,4 +1,6 @@
-# Since 2010, Brazilian officials ate two steakhouse dinners per day with public money
+# In the vote about corruption charges, Temer's allies fled from the spotlight
+### Comparatively, allies of Dilma Rousseff spoke for longer and used more aggressive vocabulary when defending her against the impeachment
+
 #### RODRIGO MENEGAT
 
 *“I vote yes”*. Those brief, concise words were spoken hundreds of times at the Câmara dos Deputados – the lower house of Brazilian Congress – in the evening of August 2.
