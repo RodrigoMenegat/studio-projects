@@ -21,6 +21,6 @@ What is an angry word, though? The calculations were made using a dictionary tha
 
 Results should be taken with a grain of salt, though: since we are evaluating standalone words, the measure will overlook more complex usages of language such as irony, contempt or hidden threats.
 
-<img src="party_case_sized_horizontal.png" allign=center>
+<img src="party_case_sized_horizontal.png" allign="middle">
 
-<img src="violin-length.png" allign=center >
+<img src="violin-length.png" allign="middle">
