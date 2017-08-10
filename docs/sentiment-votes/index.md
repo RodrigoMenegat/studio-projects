@@ -10,14 +10,14 @@ By voting “yes” to a special commission report that said Mr. Michel Temer wa
 Temer’s allies won by a wide margin (for the investigation to continue, the opposition needed to gather 342 votes and only reached 227), but they seem to have ran away from the spotlight.
 
 <img style="float: left;" src="party_case_sized.png" align="middle">
-
+ 
 Their speeches were shorter and less virulent than those made by the opposition. Most of the representatives who sided with the president used around 50 characters in the pronouncements they made when casting the vote. This is barely sufficient to say, in Portuguese, “I vote yes with the report, Mr. President”.
-
-<img src="violin-length.png" align="middle">
 
 Possibly, they were trying to avoid a strong association with the president that has the lowest popularity ratings in Brazilian politics since the direct elections were reestablished in the country, in 1992.
 
 This behavior is completely different than the one displayed by the representatives that defended Dilma Rousseff during her impeachment vote, in 2016: even being far outnumbered, they spoke for longer and in a more belligerent tone.
+
+<img src="violin-length.png" align="middle">
 
 A quantitative analysis of the words used in both occasions shows precisely that. Not only Dilma’s defenders spoke considerably more when casting their votes, but they also used a bigger percentage of words related to anger.
 
