@@ -1,4 +1,4 @@
-# In the vote about corruption charges, Temer's allies fled from the spotlight
+# In the vote about corruption charges, Temer's allies ran away from the spotlight
 ### Comparatively, allies of Dilma Rousseff spoke for longer and used more aggressive vocabulary when defending her against the impeachment
 
 #### RODRIGO MENEGAT
@@ -9,7 +9,7 @@ By voting “yes” to a special commission report that said Mr. Michel Temer wa
 
 Temer’s allies won by a wide margin (for the investigation to continue, the opposition needed to gather 342 votes and only reached 227), but they seem to have ran away from the spotlight. 
 
-<img src="party_case_sized_horizontal.png" align="middle">
+<img src="party_case_sized.png" align="middle">
 
 Their speeches were shorter and less virulent than those made by the opposition. Most of the representatives who sided with the president used around 50 characters in the pronouncements they made when casting the vote. This is barely sufficient to say, in Portuguese, “I vote yes with the report, Mr. President”.
 
@@ -25,6 +25,6 @@ What is an angry word, though? The calculations were made using a dictionary tha
 
 Results should be taken with a grain of salt, though: since we are evaluating standalone words, the measure will overlook more complex usages of language such as irony, contempt or hidden threats.
 
-Note: push 6
+Note: push 7
 
 
