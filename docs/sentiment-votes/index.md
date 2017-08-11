@@ -1,4 +1,10 @@
-# In the vote about corruption charges, Temer's allies ran away from the spotlight
+---
+
+layout: project
+
+---
+
+# In the vote about corruption charges, Temer supporters avoided the spotlight
 ## Comparatively, allies of Dilma Rousseff spoke for longer and used more aggressive vocabulary when defending her against the impeachment
 
 #### RODRIGO MENEGAT
