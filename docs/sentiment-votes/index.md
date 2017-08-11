@@ -17,7 +17,7 @@ A quantitative analysis of the words used by congressmen in both occasions shows
 
 Possibly, Temer supporters were trying to avoid a strong association with the president that has the lowest popularity ratings in Brazilian politics since the direct elections were reestablished in the country, in 1992. Dilma's ratings were also low in 2016, but some sectors of Brazilian society gave her vocal support until the very end. The perspective of seeing their president deposed in what they considered a "soft coup" may have sparked rage among those who sided with her.
 
-But, after all, what is considered an angry word? Those calculations were made using a dictionary that puts words in 64 different categories, made by researchers of the [Interinstitutional Center for Computational Linguistics]( http://www.nilc.icmc.usp.br/nilc/index.php/) from the University of São Paulo (USP). “Anger” is one of those bins.
+But, after all, what is considered an angry word? Those calculations were made using a dictionary that puts words in 64 different categories, translated from english by researchers of the [Interinstitutional Center for Computational Linguistics]( http://www.nilc.icmc.usp.br/nilc/index.php/) from the University of São Paulo (USP). “Anger” is one of those bins.
 
 Results should be taken with a grain of salt: since we are evaluating standalone words, the measure will overlook more complex usages of language such as irony, contempt or hidden threats.
 
