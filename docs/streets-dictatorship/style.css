@@ -1,17 +1,10 @@
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
-
-
-
-  #header {position: absolute; top: 0px; left: 20px; width: 60%; height: 100%; z-index:1; }
-  #map {position: relative; top: 160px; left: 20px; width: 60%; height: 500px; z-index:1; }  
-  #select-menu {position: relative; left: 20px; top: 160px;  z-index:10;}
+  #header {position: relative; top: 0px; left: 20%; width: 100%; height: 50%; z-index:1; margin:auto;}
+  #map {position: relative; top: 60%; left: 0%; width: 60%; height: 500px; z-index:1; margin:auto;}  
+  #select-menu {position: relative; left: 20%; top: 60%;  z-index:1; margin:auto;}
   #sreet-view {}
   #textblock {position: relative; 
-    top: 160px; 
-    left: 20px; 
+    top: 60%; 
+    left: 0%; 
     width: 60%; 
     height: 100%; 
     z-index:1;
@@ -20,7 +13,8 @@
     monospace;
     font-size:20px;
     line-height:120%;
-    text-align: justify !important;} 
+    text-align: justify !important;
+    margin:auto;} 
   .info {right:20px; padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: gray; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
   .legend { text-align: left; line-height: 18px; color: #555; }
   .top-header {  color: black;  font-family: 'Cabin', monospace;  font-size:42px;  line-height:90%;}
