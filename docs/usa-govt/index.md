@@ -1,9 +1,6 @@
 # Are minorities-owned business geting a bigger share of governmental contract money?
 ## Not really, shows a random sample of the data.
-#### RODRIGO MENEGAT
-#### DEMETRIOS POGKAS
-#### NANDINI MALIK
-#### MRINALINI TAVAG
+#### RODRIGO MENEGAT, DEMETRIOS POGKAS, NANDINI MALIK, MRINALINI TAVAG
 
 In the last two-years, the share of government-contract payments that went to minorities-owned bussiness saw a sharp decline, as a random sample of the dataset provided by Enigma shows.
 
