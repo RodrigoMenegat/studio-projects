@@ -1,6 +1,6 @@
 // Set's the Leaflet map
   var map = L.map('map')
-  .setView([-22.7304908, -48.4799526], 3.5)
+  .setView([-22.7304908, -48.4799526], 4)
    .setMaxBounds([
   [-34.3434360685,-75.05859375],
   [-34.3434360685,-32.87109375],
@@ -10,7 +10,7 @@
   ]);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-    minZoom: 3.5,
+    minZoom: 3,
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
       '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -76,8 +76,9 @@
     layer.on({
       mouseover: highlightFeature,
       mouseout: resetHighlight,
-      //click: layer.bindPopup("<b>" + feature.properties.name + "</b><br>" +
-      //feature.properties.desc)
+      click: layer.bindPopup("<h3>" + feature.properties.name + "</h3><h4>" + feature.properties.city 
+        + ", " + feature.properties.state + "</h4>" +
+      feature.properties.desc),
     });
   }
 
