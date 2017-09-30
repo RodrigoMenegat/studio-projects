@@ -54,7 +54,7 @@
   }
 
 /* Mobile alternative: */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) {
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
