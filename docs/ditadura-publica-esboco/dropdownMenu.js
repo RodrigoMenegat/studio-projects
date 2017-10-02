@@ -1,7 +1,5 @@
 // Set's the control for the dropdown menu: victims/criminals
   $(document).ready(function () {
-// this entire function Controls everything for the drop down menu
-// you need to figure out how to change the text  
       $('#select-menu').change(function () {
     var selectedGroup = $('#select-menu').val();
     

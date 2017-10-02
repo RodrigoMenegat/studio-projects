@@ -1,13 +1,7 @@
 // Set's the Leaflet map
   var map = L.map('map')
-  .setView([-22.7304908, -48.4799526], 4)
-   .setMaxBounds([
-  [-34.3434360685,-75.05859375],
-  [-34.3434360685,-32.87109375],
-  [9.2322487994,-32.87109375],
-  [9.2322487994,-75.05859375],
-  [-34.3434360685,-75.05859375]
-  ]);
+  // Sets the starting position of the map (Long-lat-zoom)
+  .setView([-22.7304908, -48.4799526], 4);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     minZoom: 3,
@@ -23,7 +17,6 @@
 
   info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info');
-    this._div.setAttribute("width",800)
     this.update();
     return this._div;
   };
@@ -34,7 +27,7 @@
             : "<h2>Nas ruas do Brasil, a ditadura ainda vive</h2>43 anos depois do golpe militar que suspendeu a democracia no paí por duas décadas, ruas nomeadas em homenagem aos criminosos do regime, em verde, são muito mais comuns do que as que fazem referência aos mortos e desaparecidos, representadas em vermelho.<br><br>Selecione uma rua para aprender sobre o homenageado");
   };
 
-  info.addTo(map);
+  info.addTo(map);    
 
   function style(feature) {
     return {
@@ -81,6 +74,14 @@
       feature.properties.desc),
     });
   }
+
+  map.addEventListener("popupopen", function() {
+    info._div.style.visibility = "hidden";
+  });
+
+  map.addEventListener("popupclose", function() {
+    info._div.style.visibility = "visible";
+  });
 
   var customGeojson = L.geoJson(null, {
     style: style,
