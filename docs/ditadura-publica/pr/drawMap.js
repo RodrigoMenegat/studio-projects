@@ -88,4 +88,4 @@
     onEachFeature: onEachFeature
   });
 
-  geojson = omnivore.geojson('pr.geojson', null, customGeojson).addTo(map);
+  geojson = omnivore.geojson('https://github.com/RodrigoMenegat/studio-projects/blob/master/code/mapas-publica/PR.geojson', null, customGeojson).addTo(map);
