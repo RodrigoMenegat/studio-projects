@@ -1,7 +1,7 @@
 // Set's the Leaflet map
   var map = L.map('map')
   // Sets the starting position of the map (Long-lat-zoom)
-  .setView([1.5546625,-51.4649826], 8);
+  .setView([-8.2527561,-38.3720236], 8.5);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     minZoom: 3,
@@ -9,7 +9,7 @@
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
       '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
       'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    id: 'mapbox.light'
+    id: 'mapbox.dark'
   }).addTo(map);
 
   // Control that shows information on hover
@@ -88,4 +88,4 @@
     onEachFeature: onEachFeature
   });
 
-  geojson = omnivore.geojson('AP.geojson', null, customGeojson).addTo(map);
+  geojson = omnivore.geojson('pe.geojson', null, customGeojson).addTo(map);

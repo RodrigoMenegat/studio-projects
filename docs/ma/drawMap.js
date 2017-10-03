@@ -1,7 +1,7 @@
 // Set's the Leaflet map
   var map = L.map('map')
   // Sets the starting position of the map (Long-lat-zoom)
-  .setView([1.5546625,-51.4649826], 8);
+  .setView([-5.0264134,-44.7724504], 7);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     minZoom: 3,
@@ -88,4 +88,4 @@
     onEachFeature: onEachFeature
   });
 
-  geojson = omnivore.geojson('AP.geojson', null, customGeojson).addTo(map);
+  geojson = omnivore.geojson('ma.geojson', null, customGeojson).addTo(map);
