@@ -88,4 +88,4 @@
     onEachFeature: onEachFeature
   });
 
-  geojson = omnivore.geojson('pr.geojson', null, customGeojson).addTo(map);
+  geojson = omnivore.geojson('PR.geojson', null, customGeojson).addTo(map);
