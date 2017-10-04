@@ -12,23 +12,6 @@
     id: 'mapbox.light'
   }).addTo(map);
 
-  // Control that shows information on hover
-  var info = L.control();
-
-  info.onAdd = function (map) {
-    this._div = L.DomUtil.create('div', 'info');
-    this.update();
-    return this._div;
-  };
-
-  info.update = function (props) {
-    this._div.innerHTML = (props ?
-      '<h2>' + props.name + '</h2><h4>' + props.city + ", " + props.state + "</h4>" + props.desc 
-            : "<h2>Nas ruas do Brasil, a ditadura ainda vive</h2>43 anos depois do golpe militar que suspendeu a democracia no paí por duas décadas, ruas nomeadas em homenagem aos criminosos do regime, em verde, são muito mais comuns do que as que fazem referência aos mortos e desaparecidos, representadas em vermelho.<br><br>Selecione uma rua para aprender sobre o homenageado");
-  };
-
-  info.addTo(map);    
-
   function style(feature) {
     return {
       weight: 3,
@@ -51,14 +34,12 @@
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       layer.bringToFront();
     }
-    info.update(layer.feature.properties);
   }
 
   var geojson;
 
   function resetHighlight(e) {
     geojson.resetStyle(e.target);
-    info.update();
   }
 
 //  function zoomToFeature(e) {
@@ -74,14 +55,6 @@
       feature.properties.desc),
     });
   }
-
-  map.addEventListener("popupopen", function() {
-    info._div.style.visibility = "hidden";
-  });
-
-  map.addEventListener("popupclose", function() {
-    info._div.style.visibility = "visible";
-  });
 
   var customGeojson = L.geoJson(null, {
     style: style,
