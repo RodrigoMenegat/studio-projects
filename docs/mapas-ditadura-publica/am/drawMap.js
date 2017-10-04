@@ -1,7 +1,7 @@
 // Set's the Leaflet map
   var map = L.map('map')
   // Sets the starting position of the map (Long-lat-zoom)
-  .setView([-4.3113448,-63.9993121], 6.75);
+  .setView([-4.3113448,-63.9993121], 4);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     minZoom: 3,
