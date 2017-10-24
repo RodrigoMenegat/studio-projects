@@ -1,0 +1,497 @@
+﻿player,year,matches_on_year,matches_total,goals_on_year,goals_total,years_on_team
+Pelé,1957,0,0,0,0,0
+Pelé,1957,2,2,2,2,1
+Pelé,1958,7,9,9,11,2
+Pelé,1959,9,18,11,22,3
+Pelé,1960,6,24,4,26,4
+Pelé,1961,0,24,0,26,5
+Pelé,1962,8,32,8,34,6
+Pelé,1963,7,39,7,41,7
+Pelé,1964,3,42,2,43,8
+Pelé,1965,8,50,9,52,9
+Pelé,1966,9,59,5,57,10
+Pelé,1967,0,59,0,57,11
+Pelé,1968,7,66,4,61,12
+Pelé,1969,9,75,7,68,13
+Pelé,1970,15,90,8,76,14
+Pelé,1971,2,92,1,77,15
+Ronaldo,1994,0,0,0,0,0
+Ronaldo,1994,4,4,1,1,1
+Ronaldo,1995,7,11,3,4,2
+Ronaldo,1996,5,16,4,8,3
+Ronaldo,1997,20,36,15,23,4
+Ronaldo,1998,11,47,5,28,5
+Ronaldo,1999,11,58,9,37,6
+Ronaldo,2002,13,71,11,48,7
+Ronaldo,2003,8,79,3,51,8
+Ronaldo,2004,12,91,8,59,9
+Ronaldo,2005,5,96,1,60,10
+Ronaldo,2006,8,104,7,67,11
+Ronaldo,2011,1,105,0,67,12
+Zico,1976,0,0,0,0,0
+Zico,1976,11,11,7,7,1
+Zico,1977,11,22,9,16,2
+Zico,1978,18,40,9,25,3
+Zico,1979,6,46,7,32,4
+Zico,1980,6,52,6,38,5
+Zico,1981,13,65,14,52,6
+Zico,1982,11,76,8,60,7
+Zico,1983,2,78,0,60,8
+Zico,1984,0,78,0,60,9
+Zico,1985,5,83,3,63,10
+Zico,1986,5,88,3,66,11
+Zico,1989,1,89,0,66,12
+Romário,1987,0,0,0,0,0
+Romário,1987,6,6,4,4,1
+Romário,1988,7,13,2,6,2
+Romário,1989,11,24,4,10,3
+Romário,1990,1,25,0,10,4
+Romário,1992,2,27,0,10,5
+Romário,1993,1,28,2,12,6
+Romário,1994,10,38,10,22,7
+Romário,1997,17,55,19,41,8
+Romário,1998,7,62,3,44,9
+Romário,2000,2,64,7,51,10
+Romário,2001,5,69,3,54,11
+Romário,2005,1,70,1,55,12
+Neymar,2010,0,0,0,0,0
+Neymar,2010,2,2,1,1,1
+Neymar,2011,13,15,7,8,2
+Neymar,2012,12,27,9,17,3
+Neymar,2013,19,46,10,27,4
+Neymar,2014,14,60,15,42,5
+Neymar,2015,9,69,4,46,6
+Neymar,2016,6,75,4,50,7
+Neymar,2017,6,81,2,52,8
+Bebeto,1985,0,0,0,0,0
+Bebeto,1985,6,6,0,0,1
+Bebeto,1986,0,6,0,0,2
+Bebeto,1987,0,6,0,0,3
+Bebeto,1988,0,6,0,0,4
+Bebeto,1989,18,24,10,10,5
+Bebeto,1990,3,27,0,10,6
+Bebeto,1991,5,32,0,10,7
+Bebeto,1992,8,40,7,17,8
+Bebeto,1993,9,49,7,24,9
+Bebeto,1994,11,60,8,32,10
+Bebeto,1995,2,62,2,34,11
+Bebeto,1996,1,63,1,35,12
+Bebeto,1997,3,66,1,36,13
+Bebeto,1998,9,75,3,39,14
+Rivaldo,1993,0,0,0,0,0
+Rivaldo,1993,1,1,1,1,1
+Rivaldo,1994,1,2,0,1,2
+Rivaldo,1995,5,7,1,2,3
+Rivaldo,1996,2,9,2,4,4
+Rivaldo,1997,4,13,1,5,5
+Rivaldo,1998,12,25,5,10,6
+Rivaldo,1999,13,38,8,18,7
+Rivaldo,2000,11,49,8,26,8
+Rivaldo,2001,8,57,3,29,9
+Rivaldo,2002,10,67,5,34,10
+Rivaldo,2003,7,74,1,35,11
+Ademir de Menezes,1945,0,0,0,0,0
+Ademir de Menezes,1945,9,9,7,7,1
+Ademir de Menezes,1946,6,15,5,12,2
+Ademir de Menezes,1947,2,17,7,19,3
+Ademir de Menezes,1948,0,17,0,19,4
+Ademir de Menezes,1949,5,22,7,26,5
+Ademir de Menezes,1950,9,31,18,44,6
+Ademir de Menezes,1951,0,31,0,44,7
+Ademir de Menezes,1952,5,36,2,46,8
+Ademir de Menezes,1953,3,39,1,47,9
+Ronaldinho Gaúcho,1999,0,0,0,0,0
+Ronaldinho Gaúcho,1999,13,13,7,7,1
+Ronaldinho Gaúcho,2000,5,18,1,8,2
+Ronaldinho Gaúcho,2001,4,22,1,9,3
+Ronaldinho Gaúcho,2002,10,32,4,13,4
+Ronaldinho Gaúcho,2003,8,40,2,15,5
+Ronaldinho Gaúcho,2004,10,50,6,21,6
+Ronaldinho Gaúcho,2005,12,62,6,27,7
+Ronaldinho Gaúcho,2006,9,71,0,27,8
+Ronaldinho Gaúcho,2007,11,82,5,32,9
+Ronaldinho Gaúcho,2008,2,84,0,32,10
+Ronaldinho Gaúcho,2009,3,87,0,32,11
+Ronaldinho Gaúcho,2010,1,88,0,32,12
+Ronaldinho Gaúcho,2011,5,93,1,33,13
+Ronaldinho Gaúcho,2012,1,94,0,33,14
+Ronaldinho Gaúcho,2013,3,97,0,33,15
+Kaká,2002,0,0,0,0,0
+Kaká,2002,5,5,1,1,1
+Kaká,2003,10,15,5,6,2
+Kaká,2004,8,23,3,9,3
+Kaká,2005,14,37,3,12,4
+Kaká,2006,13,50,7,19,5
+Kaká,2007,12,62,5,24,6
+Kaká,2008,3,65,1,25,7
+Kaká,2009,13,78,3,28,8
+Kaká,2010,7,85,1,29,9
+Kaká,2011,0,85,0,29,10
+Kaká,2012,3,88,2,31,11
+Kaká,2013,2,90,0,31,12
+Kaká,2014,2,92,0,31,13
+Kaká,2015,2,94,0,31,14
+Kaká,2016,1,95,0,31,15
+Robinho,2003,0,0,0,0,0
+Robinho,2003,5,5,0,0,1
+Robinho,2004,1,6,0,0,2
+Robinho,2005,16,22,5,5,3
+Robinho,2006,12,34,2,7,4
+Robinho,2007,17,51,6,13,5
+Robinho,2008,11,62,5,18,6
+Robinho,2009,12,74,3,21,7
+Robinho,2010,11,85,6,27,8
+Robinho,2011,7,92,1,28,9
+Robinho,2013,2,94,1,29,10
+Robinho,2014,3,97,0,29,11
+Robinho,2015,4,101,1,30,12
+Robinho,2017,1,102,0,30,13
+Luís Fabiano,2003,0,0,0,0,0
+Luís Fabiano,2003,3,3,1,1,1
+Luís Fabiano,2004,9,12,5,6,2
+Luís Fabiano,2007,2,14,2,8,3
+Luís Fabiano,2008,9,23,6,14,4
+Luís Fabiano,2009,13,36,11,25,5
+Luís Fabiano,2010,7,43,3,28,6
+Luís Fabiano,2012,1,44,0,28,7
+Luís Fabiano,2013,1,45,0,28,8
+Adriano Imperador,2000,0,0,0,0,0
+Adriano Imperador,2000,1,1,0,0,1
+Adriano Imperador,2003,6,7,3,3,2
+Adriano Imperador,2004,11,18,9,12,3
+Adriano Imperador,2005,12,30,10,22,4
+Adriano Imperador,2006,6,36,3,25,5
+Adriano Imperador,2007,1,37,0,25,6
+Adriano Imperador,2008,6,43,2,27,7
+Adriano Imperador,2009,4,47,0,27,8
+Adriano Imperador,2010,1,48,0,27,9
+Fred,2005,0,0,0,0,0
+Fred,2005,2,2,2,2,1
+Fred,2006,6,8,2,4,2
+Fred,2007,2,10,0,4,3
+Fred,2011,9,19,2,6,4
+Fred,2012,1,20,1,7,5
+Fred,2013,11,31,9,16,6
+Fred,2014,8,39,2,18,7
+Rivellino,1965,0,0,0,0,0
+Rivellino,1965,1,1,0,0,1
+Rivellino,1966,0,1,0,0,2
+Rivellino,1967,0,1,0,0,3
+Rivellino,1968,16,17,6,6,4
+Rivellino,1969,1,18,1,7,5
+Rivellino,1970,9,27,5,12,6
+Rivellino,1971,7,34,1,13,7
+Rivellino,1972,5,39,0,13,8
+Rivellino,1973,10,49,3,16,9
+Rivellino,1974,15,64,6,22,10
+Rivellino,1975,0,64,0,22,11
+Rivellino,1976,8,72,1,23,12
+Rivellino,1977,12,84,3,26,13
+Rivellino,1978,8,92,0,26,14
+Tostão,1966,0,0,0,0,0
+Tostão,1966,7,7,6,6,1
+Tostão,1967,3,10,0,6,2
+Tostão,1968,15,25,8,14,3
+Tostão,1969,9,34,12,26,4
+Tostão,1970,9,43,3,29,5
+Tostão,1971,6,49,2,31,6
+Tostão,1972,5,54,1,32,7
+Jairzinho,1964,0,0,0,0,0
+Jairzinho,1964,1,1,1,1,1
+Jairzinho,1965,6,7,0,1,2
+Jairzinho,1966,10,17,0,1,3
+Jairzinho,1967,0,17,0,1,4
+Jairzinho,1968,13,30,7,8,5
+Jairzinho,1969,9,39,5,13,6
+Jairzinho,1970,14,53,11,24,7
+Jairzinho,1971,0,53,3,27,8
+Jairzinho,1972,5,58,2,29,9
+Jairzinho,1973,6,64,4,33,10
+Jairzinho,1974,16,80,0,33,11
+Jairzinho,1975,0,80,0,33,12
+Jairzinho,1976,0,80,0,33,13
+Jairzinho,1977,0,80,0,33,14
+Jairzinho,1978,0,80,0,33,15
+Jairzinho,1979,0,80,0,33,16
+Jairzinho,1980,0,80,0,33,17
+Jairzinho,1981,0,80,0,33,18
+Jairzinho,1982,1,81,0,33,19
+Edmundo,1992,0,0,0,0,0
+Edmundo,1992,4,4,1,1,1
+Edmundo,1993,5,9,1,2,2
+Edmundo,1994,0,9,0,2,3
+Edmundo,1995,12,21,5,7,4
+Edmundo,1996,1,22,0,7,5
+Edmundo,1997,5,27,2,9,6
+Edmundo,1998,8,35,1,10,7
+Edmundo,1999,0,35,0,10,8
+Edmundo,2000,2,37,0,10,9
+Raí,1987,0,0,0,0,0
+Raí,1987,11,11,3,3,1
+Raí,1988,0,11,0,3,2
+Raí,1989,0,11,0,3,3
+Raí,1990,0,11,0,3,4
+Raí,1991,5,16,3,6,5
+Raí,1992,7,23,6,12,6
+Raí,1993,16,39,2,14,7
+Raí,1994,9,48,3,17,8
+Raí,1995,0,48,0,17,9
+Raí,1996,0,48,0,17,10
+Raí,1997,0,48,0,17,11
+Raí,1998,1,49,0,17,12
+Túlio Maravilha,1990,0,0,0,0,0
+Túlio Maravilha,1990,1,1,1,1,1
+Túlio Maravilha,1991,1,2,1,2,2
+Túlio Maravilha,1992,0,2,0,2,3
+Túlio Maravilha,1993,0,2,0,2,4
+Túlio Maravilha,1994,1,3,1,3,5
+Túlio Maravilha,1995,12,15,12,15,6
+Mané Garrincha,1955,0,0,0,0,0
+Mané Garrincha,1955,1,1,0,0,1
+Mané Garrincha,1956,0,1,0,0,2
+Mané Garrincha,1957,6,7,0,0,3
+Mané Garrincha,1958,5,12,0,0,4
+Mané Garrincha,1959,4,16,0,0,5
+Mané Garrincha,1960,5,21,2,2,6
+Mané Garrincha,1961,4,25,1,3,7
+Mané Garrincha,1962,12,37,6,9,8
+Mané Garrincha,1963,0,37,0,9,9
+Mané Garrincha,1964,0,37,0,9,10
+Mané Garrincha,1965,6,43,0,9,11
+Mané Garrincha,1966,7,50,3,12,12
+Leônidas da Silva,1932,0,0,0,0,0
+Leônidas da Silva,1932,1,1,2,2,1
+Leônidas da Silva,1933,0,1,0,2,2
+Leônidas da Silva,1934,2,3,3,5,3
+Leônidas da Silva,1935,0,3,0,5,4
+Leônidas da Silva,1936,0,3,0,5,5
+Leônidas da Silva,1937,0,3,0,5,6
+Leônidas da Silva,1938,4,7,7,12,7
+Leônidas da Silva,1939,2,9,2,14,8
+Leônidas da Silva,1940,6,15,6,20,9
+Leônidas da Silva,1941,0,15,0,20,10
+Leônidas da Silva,1942,0,15,0,20,11
+Leônidas da Silva,1943,0,15,0,20,12
+Leônidas da Silva,1944,0,15,0,20,13
+Leônidas da Silva,1945,2,17,1,21,14
+Leônidas da Silva,1946,1,18,0,21,15
+Zizinho,1942,0,0,0,0,0
+Zizinho,1942,4,4,2,2,1
+Zizinho,1943,0,4,0,2,2
+Zizinho,1944,0,4,0,2,3
+Zizinho,1945,9,13,4,6,4
+Zizinho,1946,7,20,6,12,5
+Zizinho,1947,0,20,0,12,6
+Zizinho,1948,0,20,0,12,7
+Zizinho,1949,7,27,5,17,8
+Zizinho,1950,7,34,3,20,9
+Zizinho,1951,0,34,0,20,10
+Zizinho,1952,0,34,0,20,11
+Zizinho,1953,5,39,1,21,12
+Zizinho,1954,0,39,0,21,13
+Zizinho,1955,1,40,2,23,14
+Zizinho,1956,7,47,5,28,15
+Zizinho,1957,6,53,2,30,16
+Careca,1982,0,0,0,0,0
+Careca,1982,3,3,0,0,1
+Careca,1983,9,12,5,5,2
+Careca,1985,6,18,3,8,3
+Careca,1986,9,27,8,16,4
+Careca,1987,4,31,2,18,5
+Careca,1989,6,37,6,24,6
+Careca,1990,7,44,3,27,7
+Careca,1991,1,45,0,27,8
+Careca,1992,2,47,0,27,9
+Careca,1993,7,54,2,29,10
+Roberto Dinamite,1975,0,0,0,0,0
+Roberto Dinamite,1975,1,1,0,0,1
+Roberto Dinamite,1976,4,5,6,6,2
+Roberto Dinamite,1977,10,15,6,12,3
+Roberto Dinamite,1978,5,20,3,15,4
+Roberto Dinamite,1980,0,20,0,15,5
+Roberto Dinamite,1979,1,21,1,16,6
+Roberto Dinamite,1981,1,22,1,17,7
+Roberto Dinamite,1982,2,24,0,17,8
+Roberto Dinamite,1983,7,31,3,20,9
+Roberto Dinamite,1984,2,33,0,20,10
+Jair da Rosa Pinto,1940,0,0,0,0,0
+Jair da Rosa Pinto,1940,5,5,1,1,1
+Jair da Rosa Pinto,1941,0,5,0,1,2
+Jair da Rosa Pinto,1942,0,5,0,1,3
+Jair da Rosa Pinto,1943,0,5,0,1,4
+Jair da Rosa Pinto,1944,2,7,3,4,5
+Jair da Rosa Pinto,1945,4,11,2,6,6
+Jair da Rosa Pinto,1946,5,16,4,10,7
+Jair da Rosa Pinto,1947,2,18,1,11,8
+Jair da Rosa Pinto,1948,1,19,0,11,9
+Jair da Rosa Pinto,1949,7,26,9,20,10
+Jair da Rosa Pinto,1950,7,33,2,22,11
+Jair da Rosa Pinto,1951,0,33,0,22,12
+Jair da Rosa Pinto,1952,0,33,0,22,13
+Jair da Rosa Pinto,1953,0,33,0,22,14
+Jair da Rosa Pinto,1954,0,33,0,22,15
+Jair da Rosa Pinto,1955,0,33,0,22,16
+Jair da Rosa Pinto,1956,2,35,0,22,17
+Pepe,1956,0,0,0,0,0
+Pepe,1956,3,3,2,2,1
+Pepe,1957,7,10,3,5,2
+Pepe,1958,1,11,1,6,3
+Pepe,1959,0,11,0,6,4
+Pepe,1960,6,17,5,11,5
+Pepe,1961,4,21,1,12,6
+Pepe,1962,4,25,2,14,7
+Pepe,1963,9,34,3,17,8
+Julinho Botelho,1952,0,0,0,0,0
+Julinho Botelho,1952,4,4,1,1,1
+Julinho Botelho,1953,6,10,5,6,2
+Julinho Botelho,1954,7,17,4,10,3
+Julinho Botelho,1955,0,17,0,10,4
+Julinho Botelho,1956,0,17,0,10,5
+Julinho Botelho,1957,0,17,0,10,6
+Julinho Botelho,1958,0,17,0,10,7
+Julinho Botelho,1959,1,18,1,11,8
+Julinho Botelho,1960,6,24,1,12,9
+Julinho Botelho,1961,0,24,0,12,10
+Julinho Botelho,1962,0,24,0,12,11
+Julinho Botelho,1963,0,24,0,12,12
+Julinho Botelho,1964,2,26,1,13,13
+Julinho Botelho,1965,1,27,0,13,14
+Sócrates,1979,0,0,0,0,0
+Sócrates,1979,6,6,5,5,1
+Sócrates,1980,8,14,2,7,2
+Sócrates,1981,15,29,6,13,3
+Sócrates,1982,9,38,4,17,4
+Sócrates,1983,8,46,2,19,5
+Sócrates,1984,0,46,0,19,6
+Sócrates,1985,5,51,1,20,7
+Sócrates,1986,9,60,2,22,8
+Heleno de Freitas,1944,0,0,0,0,0
+Heleno de Freitas,1944,1,1,1,1,1
+Heleno de Freitas,1945,7,8,9,10,2
+Heleno de Freitas,1946,7,15,3,13,3
+Heleno de Freitas,1947,2,17,2,15,4
+Heleno de Freitas,1948,1,18,0,15,5
+Gérson,1960,0,0,0,0,0
+Gérson,1961,2,2,1,1,1
+Gérson,1962,0,2,0,1,2
+Gérson,1963,7,9,0,1,3
+Gérson,1964,3,12,2,3,4
+Gérson,1965,5,17,3,6,5
+Gérson,1966,5,22,2,8,6
+Gérson,1967,1,23,0,8,7
+Gérson,1968,16,39,2,10,8
+Gérson,1969,9,48,1,11,9
+Gérson,1970,11,59,2,13,10
+Gérson,1971,7,66,1,14,11
+Gérson,1972,4,70,0,14,12
+Baltazar,1950,0,0,0,0,0
+Baltazar,1950,6,6,3,3,1
+Baltazar,1951,0,6,0,3,2
+Baltazar,1952,5,11,4,7,3
+Baltazar,1953,6,17,3,10,4
+Baltazar,1954,6,23,6,16,5
+Baltazar,1955,0,23,0,16,6
+Baltazar,1956,4,27,0,16,7
+Quarentinha,1959,0,0,0,0,0
+Quarentinha,1959,2,2,3,3,1
+Quarentinha,1960,4,6,6,9,2
+Quarentinha,1961,2,8,1,10,3
+Quarentinha,1962,0,8,0,10,4
+Quarentinha,1963,5,13,4,14,5
+Tesourinha,1944,0,0,0,0,0
+Tesourinha,1944,1,1,1,1,1
+Tesourinha,1945,7,8,1,2,2
+Tesourinha,1946,6,14,0,2,3
+Tesourinha,1947,1,15,1,3,4
+Tesourinha,1949,6,21,7,10,5
+Tesourinha,1950,2,23,0,10,6
+Oscar,2011,0,0,0,0,0
+Oscar,2011,2,2,0,0,1
+Oscar,2012,10,12,4,4,2
+Oscar,2013,16,28,4,8,3
+Oscar,2014,16,44,3,11,4
+Oscar,2015,4,48,1,12,5
+Oscar,2016,0,48,0,12,6
+Oscar,2017,0,48,0,12,7
+Hulk,2009,0,0,0,0,0
+Hulk,2009,2,2,0,0,1
+Hulk,2010,0,2,0,0,2
+Hulk,2011,6,8,0,0,3
+Hulk,2012,10,18,6,6,4
+Hulk,2013,14,32,2,8,5
+Hulk,2014,9,41,1,9,6
+Hulk,2015,4,45,2,11,7
+Hulk,2016,2,47,0,11,8
+Hulk,2017,2,47,0,11,9
+Alexandre Pato,2008,0,0,0,0,0
+Alexandre Pato,2008,4,4,1,1,1
+Alexandre Pato,2009,4,8,0,1,2
+Alexandre Pato,2010,3,11,3,4,3
+Alexandre Pato,2011,7,18,2,6,4
+Alexandre Pato,2012,4,22,3,9,5
+Alexandre Pato,2013,3,25,1,10,6
+Alexandre Pato,2014,0,25,0,10,7
+Alexandre Pato,2015,0,25,0,10,8
+Alexandre Pato,2016,0,25,0,10,9
+Alexandre Pato,2017,0,25,0,10,10
+Roberto Carlos,1992,0,0,0,0,0
+Roberto Carlos,1992,7,7,0,0,1
+Roberto Carlos,1993,5,12,0,0,2
+Roberto Carlos,1994,7,19,0,0,3
+Roberto Carlos,1995,13,32,1,1,4
+Roberto Carlos,1996,4,36,0,1,5
+Roberto Carlos,1997,18,54,2,3,6
+Roberto Carlos,1998,10,64,0,3,7
+Roberto Carlos,1999,13,77,2,5,8
+Roberto Carlos,2000,9,86,0,5,9
+Roberto Carlos,2001,7,93,1,6,10
+Roberto Carlos,2002,11,104,1,7,11
+Roberto Carlos,2003,5,109,1,8,12
+Roberto Carlos,2004,12,121,0,8,13
+Roberto Carlos,2005,9,130,3,11,14
+Roberto Carlos,2006,6,136,0,11,15
+Reinaldo,1975,0,0,0,0,0
+Reinaldo,1975,0,0,3,3,1
+Reinaldo,1977,1,1,6,9,2
+Reinaldo,1978,5,6,12,21,3
+Reinaldo,1979,0,6,0,21,4
+Reinaldo,1980,3,9,3,24,5
+Reinaldo,1981,5,14,8,32,6
+Reinaldo,1982,0,14,0,32,7
+Reinaldo,1983,0,14,0,32,8
+Reinaldo,1984,0,14,2,34,9
+Reinaldo,1985,0,14,3,37,10
+Vavá,1955,0,0,0,0,0
+Vavá,1955,1,1,0,0,1
+Vavá,1956,0,1,0,0,2
+Vavá,1957,0,1,0,0,3
+Vavá,1958,6,7,6,6,4
+Vavá,1959,0,7,0,6,5
+Vavá,1960,1,8,1,7,6
+Vavá,1961,0,8,0,7,7
+Vavá,1962,10,18,7,14,8
+Vavá,1963,0,18,0,14,9
+Vavá,1964,2,20,0,14,10
+Müller,1986,0,0,0,0,0
+Müller,1986,12,12,1,1,1
+Müller,1987,10,22,2,3,2
+Müller,1988,3,25,1,4,3
+Müller,1989,3,28,0,4,4
+Müller,1990,7,35,3,7,5
+Müller,1991,1,36,1,8,6
+Müller,1992,2,38,0,8,7
+Müller,1993,12,50,4,12,8
+Müller,1994,1,51,0,12,9
+Müller,1997,1,52,0,12,10
+Müller,1998,1,53,0,12,11
+Didi,1952,0,0,0,0,0
+Didi,1952,5,5,1,1,1
+Didi,1953,5,10,0,1,2
+Didi,1954,7,17,2,3,3
+Didi,1955,2,19,0,3,4
+Didi,1956,10,29,2,5,5
+Didi,1957,10,39,9,14,6
+Didi,1958,8,47,1,15,7
+Didi,1959,7,54,3,18,8
+Didi,1961,4,58,1,19,9
+Didi,1962,10,68,1,20,10
