@@ -16,7 +16,7 @@
   // The xPositionScale will take on the age and return a linear position from 0 to width
   // Domain will go from 16 years to 40 years
   var xPositionScale = d3.scaleLinear()
-    .domain([15,40])
+    .domain([16,40])
     .range([0, width])
 
   // The yPositionScale takes the number of goals scored by each player. It returns a position from 0 to height
@@ -138,6 +138,9 @@
           })
       })
      
+     // We want Neymar to be above all the mess of other lines when we first load the page, so:
+     neymarPath = svg.select("path.Neymar")
+      neymarPath.raise()
 
     // Add a single dot in the end of each line
     svg.selectAll(".circle-in-the-end")
@@ -273,30 +276,22 @@
       .attr("opacity", 0.3)
       .attr("fill","#ffffad")
     
-    // Finally, I need the axis.
+    // Finally, I need the X and Y axis.
+
+    // First, x axis
     var xAxis = d3.axisBottom(xPositionScale)
+      .tickFormat(d3.format("d")) // Remove the thousands marker
     svg.append("g")
       .attr("fill","black")
       .attr("transform", "translate(0," + (height)+ ")")
-      .call(xAxis);
+      .call(xAxis)
+    // There is some custom styling going on down here:
+      .select(".domain")
+        .remove() // Removes the axis vertical line
     // And a nice little label to it!
     svg.append("text")
-      .text("Goals scored")
-      .attr("x", 0 - (height/2))
-      .attr("y", -30)
-      .attr("dy",-5)
-      .attr("font-weight","bold ")
-      .attr("font-size", "12px")
-      .attr("text-anchor","middle")
-      .attr("transform", "rotate(-90)");
-
-    var yAxis = d3.axisLeft(yPositionScale)
-    svg.append("g")
-      .attr("class", "axis y-axis")
-      .call(yAxis)
-    // And a nice little label to it!
-    svg.append("text")
-      .text("Player age")
+      .attr("class","x-axis-label")
+      .text("Age")
       .attr("x",width/2)
       .attr("y",height + margin.bottom)
       .attr("dy",-10)
@@ -304,6 +299,29 @@
       .attr("font-size", "12px")
       .attr("text-anchor","middle")
 
+      // Then, the y axis
+    var yAxis = d3.axisLeft(yPositionScale)
+      .tickSize(0 - width) // Make the ticks occupy the whole svg, left to right
+    svg.append("g")
+      .attr("class", "axis y-axis")
+      .call(yAxis)
+    // There is some custom styling going on down here:
+      .select(".domain")
+        .remove() // Removes the axis vertical line
+    svg.selectAll(".tick:not(:first-of-type) line")
+      .attr("stroke", "#777") // Styling the ticks - color
+      .attr("stroke-dasharray", "2,3"); // Styling the ticks - dot size
+    // And a nice little label to it!
+    svg.append("text")
+      .attr("class","y-axis-label")
+      .text("Goals scored")
+      .attr("x", 0 - (height/2))
+      .attr("y", -30)
+      .attr("dy",-5)
+      .attr("font-weight","bold ")
+      .attr("font-size", "12px")
+      .attr("text-anchor","middle")
+      .attr("transform", "rotate(-90)")
 
   }
 
