@@ -22,7 +22,7 @@
   // The yPositionScale takes the number of goals scored by each player. It returns a position from 0 to height
   // The domain ranges from 0 to 80 - Pelé, the most prolific goal scorer, scored 77 times.
   var yPositionScale = d3.scaleLinear()
-    .domain([0,100])
+    .domain([0,80])
     .range([height, 0])
 
   // I need to set a recipe for the lines.
@@ -70,7 +70,7 @@
           return "#19c119"
         }
         else {
-          return "gray"
+          return "#E0D6E0"
         }
       })
       .attr("d", function(d) {
@@ -88,6 +88,7 @@
               return "#353635"
             }
           })
+          paths.raise()
         var circles = d3.selectAll("circle." + d.key.toLowerCase().replace(/ /g,'-'))
           circles.attr("fill",function(d){
             if (d.key === "Neymar"){
@@ -97,9 +98,10 @@
               return "#353635"
             }
           })
+          circles.raise()
         var labels = d3.selectAll("text." + d.key.toLowerCase().replace(/ /g,'-'))
           labels.attr("visibility", "visible")
-
+          labels.raise()
       })
       .on("mouseout", function(d) {
         var paths = d3.selectAll('path.' + d.key.toLowerCase().replace(/ /g,'-'))
@@ -108,7 +110,7 @@
               return "#19c119"
             }
             else {
-              return "gray"
+              return "#E0D6E0"
             }
           })
         var circles = d3.selectAll("circle." + d.key.toLowerCase().replace(/ /g,'-'))
@@ -117,7 +119,7 @@
               return "#19c119"
             }
             else {
-              return "gray"
+              return "#E0D6E0"
             }
           })
         var labels = d3.selectAll("text." + d.key.toLowerCase().replace(/ /g,'-'))
@@ -139,7 +141,7 @@
       .attr("class", function(d){
         return d.key.toLowerCase().replace(/ /g,'-')
       })
-      .attr("r",4)
+      .attr("r",3)
       .attr("cx", function(d){
         var first = d.values[d.values.length-1] // Gets the first object of nested array
         return xPositionScale(first.year) // And read the key 'year'
@@ -153,7 +155,7 @@
           return "#19c119"
         }
         else {
-          return "gray"
+          return "#E0D6E0"
         }
       })
       // An event listener for highlighting on hover and showing the names that are hidden
@@ -167,6 +169,7 @@
               return "#353635"
             }
           })
+          paths.raise()
         var circles = d3.selectAll("circle." + d.key.toLowerCase().replace(/ /g,'-'))
           circles.attr("fill",function(d){
             if (d.key === "Neymar"){
@@ -176,8 +179,10 @@
               return "#353635"
             }
           })
+          circles.raise()
         var labels = d3.selectAll("text." + d.key.toLowerCase().replace(/ /g,'-'))
           labels.attr("visibility", "visible")
+          labels.raise()
 
       })
       .on("mouseout", function(d) {
@@ -187,7 +192,7 @@
               return "#19c119"
             }
             else {
-              return "gray"
+              return "#E0D6E0"
             }
           })
         var circles = d3.selectAll("circle." + d.key.toLowerCase().replace(/ /g,'-'))
@@ -196,7 +201,7 @@
               return "#19c119"
             }
             else {
-              return "gray"
+              return "#E0D6E0"
             }
           })
         var labels = d3.selectAll("text." + d.key.toLowerCase().replace(/ /g,'-'))
