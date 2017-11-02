@@ -76,8 +76,6 @@
     .attr("x2", function(d) {
       return xPositionScale(d.message) - 4
     })
-
-
   // Adding text to the left side of the chart
   svg.selectAll(".label-friend")
     .data(datapoints)

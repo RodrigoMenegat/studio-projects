@@ -19,31 +19,28 @@
       <div id="chart-1"></div> 
       <br>
       <!-- Radial chart-->
-      <div id="chart-2">
-        <div id="chart-2-chart"></div>
-        <div id="chart-2-text">
-          <h3>No respect for work hours</h3>
-          <p>We wake up late, text a lot on lunch and then go to work and text more</p>
-          <br>
-          <p>Think of this chart as a clock. A weird non-circular 24-hour clock, but a clock nevertheless. The longer the pie slice, the more messages were sent in that hour of the day. This shows that my friends only <b>really</b> start texting in the late morning. Chat gets really intense on lunch, but lasts only until we get to work, around 12 PM... Nevertheless, after a while the boredom of newsroom life strikes and we text and text and text and text until we sleep. Pretty exciting.</p>
-        </div>
-      </div>
+      <h3>No respect for work hours</h3>
+      <p>Think of this chart as a clock. A weird non-circular 24-hour clock, but a clock nevertheless. The longer the pie slice, the more messages were sent in that hour of the day. This shows that my friends only <b>really</b> start texting in the late morning. Chat gets really intense on lunch, but lasts only until we get to work, around 12 PM... Nevertheless, after a while the boredom of newsroom life strikes and we text and text and text and text until we sleep. Pretty exciting.</p>
+      <div id="chart-2"></div>
       <br>
       <!-- Area chart-->
+      <h3> When do we talk, over time? </h3>
       <div id="chart-3"></div>
-
     </div>
 
     <!-- This is D3, our graphing library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 
     <!-- This is an annotation add-on-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>\
+
+    <!-- This will load the tooltips-->
+    <script src="d3-tip.js"></script>
 
     <!-- Now we include our actual visualization -->
     <script src="chart-1.js"></script>
     <script src="chart-2.js"></script>
-    <!--<script src="chart-3.js"></script>-->
+    <script src="chart-3.js"></script>
 
   </body>
 </html>

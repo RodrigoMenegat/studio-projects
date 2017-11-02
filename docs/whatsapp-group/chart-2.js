@@ -5,7 +5,7 @@
       width = 500 - margin.left - margin.right;
 
   // Create a SVG to hold the chart
-  var svg = d3.select("#chart-2-chart")
+  var svg = d3.select("#chart-2")
       .append("svg")
       .attr("height", height + margin.top + margin.bottom)
       .attr("width", width + margin.left + margin.right)
@@ -56,7 +56,7 @@
 // This seond recipe determines how the arc starts in the beginning of a transiction
   var arcStart = d3.arc()
     .innerRadius(5) // The inner radius starts at 5, so we have a dot in the center
-    .outerRadius(5)
+    .outerRadius(0)
 
   // Magic invocation for the data:
   // "OH HOLY D3.JS, LIBRARY OF LIBRARIES, THE LORD OF ALL DATAVIZ PACKAGES, I OFFER THEE A CSV FILE"
@@ -87,15 +87,7 @@
         })
         .attr("d", function(d) {
           return arcStart(d)
-        })        
-        .transition()
-        .duration(1000)
-        .attr("d", function(d) {
-          return arc(d)
         })
-        /*.attr("fill", function(d) {
-          return colorScale(d.data.message)
-        })*/
         .attr("stroke","white")
         .attr("stroke-width",1)
         .attr("fill", function(d) {
@@ -114,7 +106,15 @@
           else {
             return midnightScale(d.data.hour)
           }
+        })     
+        .transition()
+        .duration(1000)
+        .attr("d", function(d) {
+          return arc(d)
         })
+        /*.attr("fill", function(d) {
+          return colorScale(d.data.message)
+        })*/
 
   // Adding some marks to our weeeeeird clock
   svg.append("text")
