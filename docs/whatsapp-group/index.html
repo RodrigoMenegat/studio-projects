@@ -1,0 +1,49 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h3>I text a lot</h3>
+
+      <p>Using the text logs from six months of group chat, I decided to visualize how a close group of my friends communicates on WhatsApp. The results? I talk too much, sometimes we get really hypochondriac and we chat a lot during work hours. Shame on us.  </p>
+
+      <!-- Lollipop chart-->
+      <div id="chart-1"></div> 
+      <br>
+      <!-- Radial chart-->
+      <div id="chart-2">
+        <div id="chart-2-chart"></div>
+        <div id="chart-2-text">
+          <h3>No respect for work hours</h3>
+          <p>We wake up late, text a lot on lunch and then go to work and text more</p>
+          <br>
+          <p>Think of this chart as a clock. A weird non-circular 24-hour clock, but a clock nevertheless. The longer the pie slice, the more messages were sent in that hour of the day. This shows that my friends only <b>really</b> start texting in the late morning. Chat gets really intense on lunch, but lasts only until we get to work, around 12 PM... Nevertheless, after a while the boredom of newsroom life strikes and we text and text and text and text until we sleep. Pretty exciting.</p>
+        </div>
+      </div>
+      <br>
+      <!-- Area chart-->
+      <div id="chart-3"></div>
+
+    </div>
+
+    <!-- This is D3, our graphing library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+    <!-- This is an annotation add-on-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+
+    <!-- Now we include our actual visualization -->
+    <script src="chart-1.js"></script>
+    <script src="chart-2.js"></script>
+    <!--<script src="chart-3.js"></script>-->
+
+  </body>
+</html>

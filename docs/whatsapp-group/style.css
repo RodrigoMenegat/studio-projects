@@ -1,0 +1,49 @@
+svg { 
+  display: block;
+  margin: 0 auto;
+}
+
+h1 { margin-bottom: 2rem; }
+
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 { 
+  margin-top: 3rem; 
+  margin-bottom: 1rem;
+}
+
+#chart-2-chart {
+  width: 50%;
+  float: left;
+}
+
+#chart-2-text {
+  width: 50%;
+  float: right;
+}
+.container {
+  max-width: 46rem;
+}
+
+img.block {
+  display: block;
+  border: solid #333 1p;
+  margin: 0 auto;
+}
+
+/* svg {
+  margin-bottom: 15px;
+} */
+
+.ticks {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.label-total {
+  font-size: 8px;
+  font-weight: lighter;
+}
