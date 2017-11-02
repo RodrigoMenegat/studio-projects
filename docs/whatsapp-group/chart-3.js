@@ -82,9 +82,6 @@
       svg.selectAll(".day-circle")
           .data(innerDatapoints)
           .enter().append("circle")
-          .attr("r",function(d){
-            return radiusScale(d.message)
-          })
           .attr("stroke", "white")
           .attr("stroke-width",1)
           .attr("fill",function(d){
@@ -105,6 +102,12 @@
           // Add a tooltip event
           .on("mouseover", tip.show)
           .on("mouseout", tip.hide)
+          .attr("r", 0)
+          .transition()
+          .duration(1000)
+          .attr("r",function(d){
+            return radiusScale(d.message)
+          })
 
       // Addind one label for each svg
       svg.append("text")
