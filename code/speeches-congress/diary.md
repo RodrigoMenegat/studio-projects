@@ -12,7 +12,7 @@ Pgs. 170 to 313
 
   GhostScript ran from command line:
 
-  "C:\Program Files\gs\gs9.21\bin\gswin64.exe" -dNOPAUSE -dBATCH -dFirstPage=121 -dLastPage=324 -sDEVICE=pdfwrite -sOutputFile=C:\Users\Avell\Desktop\the-lede-program\data-studio\sentiment-votes\dilma-votes.pdf -f C:\Users\Avell\Desktop\the-lede-program\data-studio\sentiment-votes\dilma.pdf
+  "C:\Program Files\gs\gs9.21\bin\gswin64.exe" -dNOPAUSE -dBATCH -dFirstPage=121 -dLastPage=324 -sDEVICE=pdfwrite -sOutputFile=C:\Users\Avell\Desktop\the-lede-program\data-studio\sentiment-votes\temer-votes.pdf -f C:\Users\Avell\Desktop\the-lede-program\data-studio\sentiment-votes\temer.pdf
 
 ## 2. Turning PDF into text
 - Temer vote
