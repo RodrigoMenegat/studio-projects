@@ -1,61 +1,201 @@
 <html>
-
   <head>
+    <title>Da Boate Azul para a Casa das Primas - uma análise comparativa das letras sertanejas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1000, shrink-to-fit=yes">
-    <title>Analisamos o vocabulário sertanejo de Tonico e Tinoco a Simone e Simaira</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-        
+    <link rel="stylesheet" href="style.css"/>
+    <!-- include our scrolling library -->
+    <script src='https://unpkg.com/scrollama'></script>
+    <script src='stickyfill.min.js'></script>
   </head>
 
-  <body>
+  <!-- Tooltip div is only called in when user click in item on the scatterplot -->
+  <div id="tooltip"></div>
 
-    <div class="container">
-    <!-- Tooltip div is only called in when user click in item on the scatterplot -->
-    <div id="tooltip"></div>
-    <!-- Info-box div is only called in when user hover over item on the t-SNE plot -->
+<body>
+  <div class="banner">
+    <span>
+      <h2>Da Boate Azul para a Casa das Primas</h2>
+      <h4>uma análise comparativa das letras sertanejas</h4>
+      <p><b>por Rodrigo Menegat</br></p>
+      <!-- TO DO: ADD A SCROLL ARROW
+      <a href="#main" class="scroll-arrow">Deslize</a> 
+      -->
+    </span>
+  </div>
 
-      <!-- The most common artists -->
-      <div id="chart-1"></div>
+  <div id="first-text-block" class="text-block">
 
-      <!-- Artist similarity table -->
-      <div id="chart-2"></div>
-      <div id="chart-3"></div>
+    <p>Não é preciso ouvir mais do que cinco minutos de rádio para descobrir que a música sertaneja se transformou desde que a geração ‘universitária’ de Michel Teló e Luan Santana começou a emplacar hits em série. Há pouquíssima semelhança entre as notas de viola de “Chico Mineiro”, primeiro grande sucesso de Tonico e Tinoco, e “Vidinha de Balada”, música grudenta de Henrique e Juliano. Milionário e José Rico não lembram nem um pouco a onda ‘funkneja’ iniciada por artistas como Cacio e Marcos.</p>
 
-      <!-- Interactive canvas for words -->     
-      <div id="chart-4"></div>
-
-      <!-- Static canvas with higlights -->
-      <div id="chart-5"></div>
-      <div id="chart-6"></div>
-      <div id="chart-7"></div>
-
-      <!-- t-SNE distribution -->
-      <div id="chart-8"></div>
-      <!-- This div holds an information hover for chart-8 !-->
-      <div id="chart-8-info-box"></div>
+    <p>O ritmo, porém, não foi a única coisa que mudou.  Na transição entre rodas de viola e baladas, os temas sobre os quais o sertanejo canta também se alteraram. Mas como exatamente essa transformação aconteceu? Para descobrir, a piauí analisou as letras de mais de 8000 músicas e de 99 artistas. Essa análise mostra como fomos da <a href="https://www.youtube.com/watch?v=aC0jp0lIgVE">Boate Azul</a> para a <a href="https://www.youtube.com/watch?v=tpoYqrqV670">Casa das Primas</a>.</p>
 
   </div>
-    <!-- This is D3, our graphing library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
 
-    <!-- This is an annotation add-on-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+  <div id="chart-1" class="chart-block-white"></div>
 
-    <!-- This will load the tooltips-->
-    <script src="d3-tip.js"></script>
+  <div class="text-block">
 
-    <!-- Now we include our actual visualization -->
-    <script src="./general-words/chart-1.js"></script>
-    <script src="./words-by-style/chart-2.js"></script>
-    <script src="./words-by-style/chart-3.js"></script>
-    <script src="./words-by-style/chart-4.js"></script>
-    <script src="./words-by-style/chart-5.js"></script>
-    <script src="./words-by-style/chart-6.js"></script>
-    <script src="./words-by-style/chart-7.js"></script>
-    <script src="./similar-artists/chart-8.js"></script>
+    <p>Uma maneira de descobrir quais são os temas importantes para um artista é contar palavras. Se um cantor usa várias vezes o termo ‘carro’, por exemplo, podemos assumir que automóveis são um assunto relevante na sua obra. O mesmo vale para gêneros musicais: se, no conjunto das músicas que analisamos, determinada expressão é muito repetida, isso significa que o gênero musical como um todo se preocupa bastante com tal conceito.</p>
+
+    <p>No gráfico acima, mostramos quais são as palavras mais comuns no sertanejo &#8211; em todo o estilo, independentemente do subgênero. Nada muito surpreendente: 'amor' é de longe o termo mais usado, aparecendo em média 219 vezes a cada 10 mil palavras. Para confirmar a vocação romântica da música, o segundo lugar fica com 'coração'.</p>
+
+    <p>Isso é interessante, mas nem tanto. O que realmente queremos saber é como esses temas mudaram desde que duplas como João Bosco e Vinícius e Jorge e Mateus começaram a transformar o sertanejo naquilo que é hoje. Para isso, precisamos descobrir quais palavras costumam aparecer com frequência no sertanejo das antigas, mas nem tanto no universitário.</p>
+
+</div>
+
+  <div id="table-holder">
+    <div id='chart-2', class="chart-block-white-left"></div>
+    <div id='chart-3', class="chart-block-white-right"></div>
+  </div>
+
+  <div class="text-block">
+
+  <p>A tabela acima mostra quais são as palavras mais características de cada um dos gêneros - ou seja, quais são as palavras que aparecem mais vezes no sertanejo tradicional em comparação com o sertanejo universitário e vice-versa.</p>
+
+  <p>Na comparação, agrupamos todos os artistas que não tocam sertanejo universitáiro sob o rótulo "tradicional". Cascatinha e Inhana são certamente diferentes de Leandro e Leonardo, mas o objetivo é mensurar o quão distante a nova geração é de todo o resto. A matemática que usamos é simples e direta: calculamos quantas vezes uma palavra aparece em cada estilo e dividimos um valor pelo outro.</p>
+
+  <p>Alguns padrões começam a aparecer: termos como "campos" e "caboclo" são praticamente exclusivos do sertanejo tradicional. As palavras mais características do sertanejo universitário costumam ocorrer menos vezes, provavelmente bordões repetidos em apenas um punhado músicas. Entretanto, o termo "balada" é bastante característico e aparece mais de 15 vezes a cada 10 mil palavras.</p>
+
+  <p>As tabelas, porém se limitam a mostrar as vinte palavras mais centrais. Nós queremos dar uma olhada em <b>todas</b> elas.</p>
+</div>
+
+  <!-- Chart-4: interactive canvas chart -->
+  <div id="chart-4" class="chart-block-white"></div>
+
+  <div class="text-block">
+
+    <p>No gráfico acima, cada círculo representa uma palavra que foi usada pelo menos uma vez nas letras que analisamos. Ele está divido em dois quadrantes: quanto mais para a esquerda, mais uma palavra aparece no sertanejo tradicional em comparação com o universitário. Quanto mais para a direita, acontece o contrário: a palavra é mais típica do sertanejo contemporâneo.</p>
+
+    <p>No meio dessa bagunça, porém, é difícil de detectar qualquer padrão. Vamos dar uma olhada em um grupo específico de palavras de cada vez.</p>
+</div>
+
+<!-- Scrolling template -->
+  <div id="scrolly-container" class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="step" id="first-step">
+          <p>Parece que até mesmo a maneira como sertanejos do passado e do presente bebem é diferente. "Cachaça" é uma palavra que aparece mais nas músicas tradicionais. Já cerveja algo é mais universitário. Entretanto, pelo jeito, universitário <b>mesmo</b> é ir para a balada.</p>
+        </div>
+        <div class="step" id="second-step">
+          <p>A maneira como os músicos falam de mulheres e de amor também revela contrastes. As referências a "esposa" são quase 40 vezes mais comuns no sertanejo tradicional. Do outro lado do espectro, estão "gatinha", "solteiro" e "pegador".
+        </div>
+        <div class="step" id="third-step">
+          <p>E as referências à vida rural, leitmotiv original do estilo, são características do sertanejo tradicional, mas nem tanto do sertanejo universitário. "Caboclo", a palavra que é mais destacadamente tradiconal nessa análise, é típica de letras de <a href="https://www.youtube.com/watch?v=njRzM-J-Cm8">Tonico e Tinoco</a>, por exemplo.
+        </div>
+      </div>
+      <!-- TO DO: Implement change on scrolling -->
+      <div class="col-sm-8">
+        <!-- Charts 5 to 7: static canvas charts -->
+        <div id="chart-5"></div>
+        <div id="chart-6"></div>
+        <div id="chart-7"></div>
+      </div>
+    </div>
+  </div>
+
+<!-- SECOND SCROLLY-THING
 
 
-  </body>
+  <div class="background-image bg2">
+    <h1>Yes, CSS to change <em>everything</em></h1>
+    <h3>Images, font color, text shadow... You might want to edit the images themselves, though, to make the text easier to read.</h3>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h3>Here is a wide thing of text</h3>
+        <p>As long as it's a separate <code>.row</code> it won't interefere with the graphic. I can have this text go all the way across! It's fine! Nothing happens!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="step" id="step-2-1">
+          <p>Right now it has a little padding on the top and bottom, and the text is all left-aligned, but you can change that easily in the CSS. It's all of the <code>.row</code> stuff.</p>
+        </div>
+        <div class="step" id="step-2-2">
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+        </div>
+      </div>
+      <div class="col-sm-4 graphic sticky">
+        <p>I am another graphic. <strong>Remove this text</strong></p>
+        <div id="graphic-2"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3>We can also put a wide graphic in here</h3>
+        <div id="graphic-3"></div>
+        <p>It doesn't need to be in one of those sticky things!</p>
+        <p>If you want to make it do a transition thing though you'll need to use a <code>.step</code></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    This is a little space at the bottom.
+  </footer>
+
+  -->
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/scrollama'></script>
+  <script src='stickyfill.min.js'></script>
+
+  <script>
+    /* Allow position: sticky to work in old browsers */
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+    scroller
+      .setup({
+        offset: 0.33, // how far from the top?
+        step: '.step', // class for stepping through
+        debug: true, // shows the line
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+        d3.select(response.element).dispatch('stepin')
+        // add highlight when entering a step
+        //d3.select(response.element).classed('active', true)
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+        d3.select(response.element).dispatch('stepout')
+        // remove highlight when exiting a step
+        //d3.select(response.element).classed('active', false)
+      })
+  </script>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+  <!-- This is an annotation add-on-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+  <!-- This will load the tooltips-->
+  <script src="d3-tip.js"></script>
+  <!-- Now we include our actual visualization -->
+  <script src="./general-words/chart-1.js"></script>
+  <script src="./words-by-style/chart-2.js"></script>
+  <script src="./words-by-style/chart-3.js"></script>
+  <script src="./words-by-style/chart-4.js"></script>
+  <script src="./words-by-style/chart-5.js"></script>
+  <script src="./words-by-style/chart-6.js"></script>
+  <script src="./words-by-style/chart-7.js"></script>
+  <script src="./similar-artists/chart-8.js"></script>
+</body>
 </html>

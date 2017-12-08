@@ -16,7 +16,7 @@
 // Note that we use a Canvas in this chart because there are too many svg elements
   var canvas  = d3.select("#chart-6")
     .append("canvas")
-    .attr("class", "canvas")
+    .attr("class", "canvas-small-multiple")
     .attr("height", height + margin.top + margin.bottom)
     .attr("width", width + margin.left + margin.right)
   // The context tells tells the canvas whether we are going for 2d or 3d stuff

@@ -1,17 +1,17 @@
 // CODE FOR CHART 4
-// A COMPARATIVE TABLE BETWEEN WORDS OF EACH GENRE
+// A SCATTER PLOT MADE WITH CANVAS TO SHOW A LOT OF DOTS
 (function() {
   var margin = { top: 50, left: 80, right: 80, bottom: 50 },
     height = 500 - margin.top - margin.bottom,
     width = 1200 - margin.left - margin.right;
 
-  // An svg holder for the canvas
-  var svgHolder = d3.select("#chart-4")
-    .append("svg")
-    .attr("class","canvas-svg-holder")
+  // The hiddenCanvas is used to listen for events and trigger interaction
+  var hiddenCanvas  = d3.select("#chart-4")
+    .append("canvas")
+    .attr("id", "hidden-canvas-interactive")
     .attr("height", height + margin.top + margin.bottom)
     .attr("width", width + margin.left + margin.right)
-    .style("position","absolute")
+    .style("display","none") // Note that it nevers show up
 
 // Note that we use a Canvas in this chart because there are too many svg elements
   var canvas  = d3.select("#chart-4")
@@ -20,13 +20,14 @@
     .attr("height", height + margin.top + margin.bottom)
     .attr("width", width + margin.left + margin.right)
 
-  // The hiddenCanvas is used to listen for events and trigger interaction
-  var hiddenCanvas  = d3.select("#chart-4")
-    .append("canvas")
-    .attr("id", "canvas-interactive")
-    .attr("height", height + margin.top + margin.bottom)
-    .attr("width", width + margin.left + margin.right)
-    .style("display","none") // Note that it nevers show up
+  // A hack to use highlighting
+    // I add an invisible svg called 'highlight'
+    var highlight = d3.select("#chart-4")
+      .append("svg")
+      .attr("id", "highlight-scatter-svg")
+      .attr("height", height + margin.top + margin.bottom)
+      .attr("width", width + margin.left + margin.right)
+
 
   // The context tells tells the canvas whether we are going for 2d or 3d stuff
   // This is the place we actually draw.
@@ -166,18 +167,19 @@
       // It's very different from the regular d3.js syntax
       context.fillStyle = node.attr("fill");
       context.globalAlpha = 0.5 // This is like opacity
-      // Draw
+      // Draw the visible canvas - note that it's done only once, since it's static
       context.beginPath()
       context.arc(node.attr("cx"), node.attr("cy"), node.attr("r"), 0,  2 * Math.PI, true)
       context.fill()
       context.closePath()
     }) // End of dataBinding.each
 
-// The draw function of the hidden canvas that gets called on each frame
-    // It constantly builds the hidden canvas and then get the information from it
+// The draw function of the hidden canvas
+    // It builds the hidden canvas and then get the information from it
     // It takes a context - the hidden one - and a boolean - hidden can be true or false
     function drawCanvas(chosenContext, hidden) {
       //Clear canvas, putting a white rectangle on top of everything
+      // If it was being drawn repetaedly, we would need to 
       // chosenContext.fillStyle = "#fff"
       // chosenContext.rect(0,0,canvas.attr("width"),canvas.attr("height"))
       // chosenContext.fill()
@@ -197,6 +199,7 @@
           // On the hidden canvas each circle gets a unique color.
           chosenContext.fillStyle = node.attr("color")
         } 
+
         else {
           chosenContext.fillStyle = node.attr("fill")
         }// end of else
@@ -212,13 +215,7 @@
       // Draw the hiddenCanvas
       drawCanvas(hiddenContext, true)
 
-// A hack to use highlighting
-    // I add an invisible svg called 'highlight'
-    chartArea = d3.select("#chart-4")
-    var highlight = chartArea.append("svg")
-      .attr("width", canvas.attr("width"))
-      .attr("height", canvas.attr("height"))
-      .attr("id", "highlight-scatter-svg")
+
     // And add an invisible circle to it
     // It will only come to life when I hover over a specific point
     highlight.append("circle")
@@ -310,11 +307,11 @@
             .style('left', d3.event.pageX + 5 + 'px')
             .html(function(){
               if ( node.attr("mais-comum-antigo") > (node.attr("mais-comum-novo")) ) {
-                return '<h3><b>' + node.attr("word") + '</b></h3>' + 'Usos a cada dez mil palavras:<b> ' + node.attr("ratio-geral") + 
+                return '<h4><b>' + node.attr("word") + '</b></h4>' + 'Usos a cada dez mil palavras:<b> ' + node.attr("ratio-geral") + 
               '</b><br><b>' + node.attr("mais-comum-antigo") + 'x</b> mais comum no sertanejo tradicional';
               }
               else {
-              return '<h3><b>' + node.attr("word") + '</b></h3>' + 'Usos a cada dez mil palavras:<b> ' + node.attr("ratio-geral") + 
+              return '<h4><b>' + node.attr("word") + '</b></h4>' + 'Usos a cada dez mil palavras:<b> ' + node.attr("ratio-geral") + 
               '</b><br><b>' + node.attr("mais-comum-novo") + 'x</b> mais comum no sertanejo universitário';
               }
             })
@@ -327,7 +324,7 @@
         } // End of if
         else {
           d3.select('#tooltip')
-            .style('opacity', 0);
+            .style('opacity', 0); // Makes tooltip invisible
 
           highlight.selectAll(".circle-higlight")
             .attr("cx", "")
