@@ -6,6 +6,14 @@ html {
     overflow-x: hidden;
 }
 
+a {
+  color: #2e3842;
+}
+
+a:hover {
+  color: #2e3842;
+}
+
 svg { 
   display: block;
   margin: auto;
@@ -70,8 +78,36 @@ top: 33%;
   padding-bottom: 5%;
 }
 
+.highlight-text-block-orange {
+  display: table;
+  background-color: #eeb651;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.highlight-text-block-purple {
+  display: table;
+  background-color: #9654d2;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+
 .text-block {
-  background-color: #d3d3d3;
+  background-color: #f1f1f1;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
@@ -80,6 +116,7 @@ top: 33%;
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 18px;
+  font-weight: lighter;
 }
 
 .chart-block-orange {
