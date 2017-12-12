@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=1000, shrink-to-fit=yes">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css"/>
-    <!-- include our scrolling library -->
-    <script src='https://unpkg.com/scrollama'></script>
-    <script src='stickyfill.min.js'></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+
+
+
   </head>
 
   <!-- Tooltip div is only called in when user click in item on the scatterplot -->
@@ -31,7 +33,7 @@
 
   <div id="sublead" class="highlight-text-block-purple">
     <p>O ritmo, porém, não foi a única coisa que mudou.  Na transição entre rodas de viola e baladas, os temas sobre os quais o sertanejo canta também se alteraram. Mas como exatamente essa transformação aconteceu? Para descobrir, a piauí analisou as letras de mais de 8000 músicas e de 99 artistas. Essa análise mostra como fomos da <a href="https://www.youtube.com/watch?v=aC0jp0lIgVE">Boate Azul</a> para a <a href="https://www.youtube.com/watch?v=tpoYqrqV670">Casa das Primas</a>.</p>
-  </div>
+  </div>  
 
 
   <div id="chart-1" class="chart-block-white"></div>
@@ -42,7 +44,7 @@
 
     <p>No gráfico acima, mostramos quais são as palavras mais comuns no sertanejo &#8211; em todo o estilo, independentemente do subgênero. Nada muito surpreendente: 'amor' é de longe o termo mais usado, aparecendo em média 219 vezes a cada 10 mil palavras. Para confirmar a vocação romântica da música, o segundo lugar fica com 'coração'.</p>
 
-    <p>Isso é interessante, mas nem tanto. O que realmente queremos saber é como esses temas mudaram desde que duplas como João Bosco e Vinícius e Jorge e Mateus começaram a transformar o sertanejo naquilo que é hoje. Para isso, precisamos descobrir quais palavras costumam aparecer com frequência no sertanejo das antigas, mas nem tanto no universitário.</p>
+    <p>Isso é interessante, mas nem tanto. O que realmente queremos saber é como esses temas mudaram desde que duplas como João Bosco e Vinícius e Jorge e Mateus começaram a transformar o sertanejo naquilo que é hoje. Para isso, precisamos descobrir quais palavras costumam aparecer com frequência no sertanejo das antigas, mas nem tanto no atual.</p>
 
 </div>
 
@@ -53,13 +55,13 @@
 
   <div class="text-block">
 
-  <p>A tabela acima mostra quais são as palavras mais características de cada um dos gêneros - ou seja, quais são as palavras que aparecem mais vezes no sertanejo tradicional em comparação com o sertanejo universitário e vice-versa.</p>
+  <p>As tabelas acima mostram quais são as palavras mais características de cada um dos gêneros - ou seja, quais são as palavras que aparecem mais vezes no sertanejo tradicional em comparação com o sertanejo universitário e vice-versa.</p>
 
   <p>Na comparação, agrupamos todos os artistas que não tocam sertanejo universitáiro sob o rótulo "tradicional". Cascatinha e Inhana são certamente diferentes de Leandro e Leonardo, mas o objetivo é mensurar o quão distante a nova geração é de todo o resto. A matemática que usamos é simples e direta: calculamos quantas vezes uma palavra aparece em cada estilo e dividimos um valor pelo outro.</p>
 
-  <p>Alguns padrões começam a aparecer: termos como "campos" e "caboclo" são praticamente exclusivos do sertanejo tradicional. As palavras mais características do sertanejo universitário costumam ocorrer menos vezes, provavelmente bordões repetidos em apenas um punhado músicas. Entretanto, o termo "balada" é bastante característico e aparece mais de 15 vezes a cada 10 mil palavras.</p>
+  <p>Alguns padrões começam a aparecer: termos como "campos" e "caboclo" são praticamente exclusivos do sertanejo tradicional. As palavras mais características do sertanejo universitário costumam ocorrer menos vezes, provavelmente bordões repetidos em apenas um punhado músicas. Entretanto, o termo "balada" é bastante representativo do estilo e aparece mais de 15 vezes a cada 10 mil palavras.</p>
 
-  <p>As tabelas, porém se limitam a mostrar as vinte palavras mais centrais. Nós queremos dar uma olhada em <b>todas</b> elas.</p>
+  <p>Essa lista, porém se limita a mostrar as vinte palavras mais centrais de cada gênero. Nós queremos dar uma olhada em <b>todas</b> elas.</p>
 </div>
 
   <!-- Chart-4: interactive canvas chart -->
@@ -67,9 +69,7 @@
 
   <div class="text-block">
 
-    <p>No gráfico acima, cada círculo representa uma palavra que foi usada pelo menos uma vez nas letras que analisamos. Ele está divido em dois quadrantes: quanto mais para a esquerda, mais uma palavra aparece no sertanejo tradicional em comparação com o universitário. Quanto mais para a direita, acontece o contrário: a palavra é mais típica do sertanejo contemporâneo.</p>
-
-    <p>No meio dessa bagunça, porém, é difícil de detectar qualquer padrão. Vamos dar uma olhada em um grupo específico de palavras de cada vez.</p>
+    <p>No gráfico acima, cada círculo representa uma palavra que foi usada pelo menos uma vez nas letras que analisamos. Ele está divido em dois quadrantes: quanto mais para a esquerda, mais uma palavra aparece no sertanejo tradicional em comparação com o universitário. Quanto mais para a direita, acontece o contrário: a palavra é mais típica do sertanejo contemporâneo. No meio dessa bagunça, porém, é difícil de detectar qualquer padrão. Vamos dar uma olhada em um grupo específico de palavras de cada vez.</p>
 </div>
 
 <!-- Scrolling template -->
@@ -83,7 +83,7 @@
           <p>A maneira como os músicos falam de mulheres e de amor também revela contrastes. As referências a "esposa" são quase 40 vezes mais comuns no sertanejo tradicional. Do outro lado do espectro, estão "gatinha", "solteiro" e "pegador".
         </div>
         <div class="step" id="third-step">
-          <p>E as referências à vida rural, leitmotiv original do estilo, são características do sertanejo tradicional, mas nem tanto do sertanejo universitário. "Caboclo", a palavra que é mais destacadamente tradiconal nessa análise, é típica de letras de <a href="https://www.youtube.com/watch?v=njRzM-J-Cm8">Tonico e Tinoco</a>, por exemplo.
+          <p>As referências à vida rural, em teoria a essência do estilo, são características do sertanejo tradicional, mas nem tanto do sertanejo universitário. "Caboclo", a palavra que é mais destacadamente tradiconal nessa análise, é típica de letras de <a href="https://www.youtube.com/watch?v=njRzM-J-Cm8">Tonico e Tinoco</a>, por exemplo.
         </div>
       </div>
       <!-- TO DO: Implement change on scrolling -->
@@ -96,56 +96,81 @@
     </div>
   </div>
 
-<!-- SECOND SCROLLY-THING
+  <div class="text-block">
+    <p>Agora que conhecemos um pouco sobre as palavras que definem cada um dos gêneros, vamos dar uma olhada nos temas que estão mais presentes nas letras de cada artista. Nós poderíamos aplicar a mesma técnica que usamos na análise anterior, ou seja, dividir o número de vezes que uma palavra é usado por um artista pelas vezes que é usada no geral. Entretanto, optamos por fazer isso de maneira mais ágil, usando técnicas de <b>processamento de linguagem natural</b> - um ramo da ciência da computação que, para resumir grosseiramente, se preocupa em estudar a estrutura da linguagem humana e representá-la na forma de modelos e algoritmos.</p>
 
-
-  <div class="background-image bg2">
-    <h1>Yes, CSS to change <em>everything</em></h1>
-    <h3>Images, font color, text shadow... You might want to edit the images themselves, though, to make the text easier to read.</h3>
+    <p>No caso, vamos fazer uma análise chamada <b>tf-idf: <i>term frequency-inverse document frequency</i></b>. O que ela faz é comparar quantas vezes determinado termo aparece em um documento - ou, no nosso caso, nas letras de um artista - e na soma de todos os documentos. Assim, uma palavra como 'amor' ou 'coração', que é muito comum em todas as composições, é considerada menos central do que um termo como 'Caboclo' para as letras de Tonico e Tinoco, já que esse último termo, apesar de aparecer menos vezes em uma contagem absoluta, é mais característico da dupla.
   </div>
 
-  <div class="container">
-
-    <div class="row">
-      <div class="col">
-        <h3>Here is a wide thing of text</h3>
-        <p>As long as it's a separate <code>.row</code> it won't interefere with the graphic. I can have this text go all the way across! It's fine! Nothing happens!</p>
-      </div>
+  <!-- A swiper/slideshow element that displays the artists and their most central words -->
+  <!-- Swiper -->
+  <div class="swiper-container">
+      <h2> As palavras mais centrais de cada artista </h2>
+      <b> Arraste para ver músicos diferentes </b>
+    <div id='chart-9' class="swiper-wrapper">
+      <!-- elements added dinamycally using chart-9.js script -->
     </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- End of swiper -->
 
-    <div class="row">
-      <div class="col-sm-8">
-        <div class="step" id="step-2-1">
-          <p>Right now it has a little padding on the top and bottom, and the text is all left-aligned, but you can change that easily in the CSS. It's all of the <code>.row</code> stuff.</p>
-        </div>
-        <div class="step" id="step-2-2">
-          <p>Blah blah blah blah</p>
-          <p>Blah blah blah blah</p>
-          <p>Blah blah blah blah</p>
-        </div>
-      </div>
-      <div class="col-sm-4 graphic sticky">
-        <p>I am another graphic. <strong>Remove this text</strong></p>
-        <div id="graphic-2"></div>
-      </div>
-    </div>
+<!-- SECOND SCROLLY-THING -->
 
-    <div class="row">
-      <div class="col">
-        <h3>We can also put a wide graphic in here</h3>
-        <div id="graphic-3"></div>
-        <p>It doesn't need to be in one of those sticky things!</p>
-        <p>If you want to make it do a transition thing though you'll need to use a <code>.step</code></p>
-      </div>
-    </div>
-
+  <div class="text-block">
+    <p>EXPLICA QUE PORRA É O ALGORITMO QUE VOCÊ TÁ USANDO PORQUE AS PESSOAS NÃO ENTENDEM ESSA MALUQUICE DE REDUZIR 99 DIMENSÕES PARA DUAS EM CADA PONTO E REPRESENTAR EM UM PLANO BIDIMENSONAL</p>
   </div>
 
-  <footer>
-    This is a little space at the bottom.
-  </footer>
+  <!-- Scrolling template -->
+    <div id="scrolly-container" class="container">
+      <div class="row">
+          <div class="col-sm-4">
+            <div id="fourth-step" class="step">
+              <p> Para começar, vamos adicionar um círculo que representa a mais tradicional das duplas sertanejas: Tonico e Tinoco. </p>
+            </div>
+            <div id="fifth-step" class="step">
+              <p> E, agora, vamos adicionar alguns outros artistas de sertanejo raiz. Primeiro, Cascatinha e Inhana. Perceba que as duas duplas estão perto: isso significa que elas cantam sobre temas parecidos, de acordo com nossa análise de palavras mais centrais. </p>
+            </div>
+            <div id="sixth-step" class="step">
+              <p> Os outros artistas do sertanejo-raiz também ficam próximos, formando um grupo no canto direito. Na extrema-esquerda, Gino e Geno destoam, assim como Amado e Antônio, em cima e no centro. </p>
+            </div>
+            <div id="seventh-step" class="step">
+              <p> A partir de agora, vamos adicionar músicos da geração intermediária, que sucedeu o sertanejo mais tradicional e levou o gênero ao sucesso nos anos 70, 80 e 90. Talvez os primeiros representantes dessa safra tenham sido Milionário e José Rico, então começamos por eles, que ficam em uma posição central no gráfico.</p>
+            </div>
+            <div id="eigth-step" class="step">
+              <p>Outros clássicos são Chitãozinho e Xororó e Zezé di Camargo e Luciano. A primeira dupla fica mais perto dos representantes do sertanejo raíz, enquanto Zezé Di Camargo e Luciano foram posicionados em um canto ainda pouco povoado.</p>
+            </div>
+            <div id="ninth-step" class="step">
+              <p>Antes de irmos para o sertanejo universitário, vamos adicionar os outros músicos do sertanejo tradicional.</p>
+            </div>
+            <div id="tenth-step" class="step">
+              <p>Embora, na análise, tenhamos colocado todos os artistas do sertanejo atual dentro do balde 'universitário', eles são bastante diferentes entre si. Para ilustrar, vamos adicionar ao gráfico artistas diferentes de cada vez. Primeiro, aqueles que são considerados um dos pioneiros do estilo: Jorge e Mateus.</p>
+            </div>
+            <div id="eleventh-step" class="step">
+              <p>Na mesma toada, podemos adicionar outros músicos que ajudaram a definir o gênero: Ferando e Sorocaba e João Bosco e Vinícius.</p>
+            </div>
+            <div id="twelth-step" class="step">
+              <p>Agora, onde ficam os responsáveis por colocar o sertanejo universitário nas paradas nacionais, como Luan Santana, Michel Teló e Gusttavo Lima?</p>
+            </div>
+            <div id="thirteenth-step" class="step">
+              <p>E as artistas do 'feminejo universitário', como Maiara e Maraisa, Simone e Simaria, Naiara Azevedo, Paula Fernandes e Marília Mendonça?</p>
+            </div>
+            <div id="fourteenth-step" class="step">
+              <p>Finalmente, podemos adicionar todo o resto. Perceba como o sertanejo universitário se espalha do centro para a esquerda! </p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div id="chart-8" class="sticky"></div>
+        </div>
+      </div>
+    </div>
 
-  -->
+    <!-- End of scroll. Beggining final, fixed chart -->
+    <div id="chart-10" class="chart-block-white"></div>
+
+
+  <footer></footer>
 
   <!-- This is D3, our graphing library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
@@ -154,7 +179,11 @@
   <script src='https://unpkg.com/scrollama'></script>
   <script src='stickyfill.min.js'></script>
 
-  <script>
+   <!-- Include our scrolling library -->
+   <script src='https://unpkg.com/scrollama'></script>
+   <!-- Allows sticky implementation of scrollytelling -->
+   <script src='stickyfill.min.js'></script>
+   <script>
     /* Allow position: sticky to work in old browsers */
     var elements = document.querySelectorAll('.sticky');
     Stickyfill.add(elements);
@@ -164,7 +193,7 @@
 
     scroller
       .setup({
-        offset: 0.33, // how far from the top?
+        offset: 0.55, // how far from the top?
         step: '.step', // class for stepping through
         debug: true, // shows the line
         container: 'container'
@@ -172,16 +201,21 @@
       .onStepEnter(function(response) {
         // trigger the stepin event
         d3.select(response.element).dispatch('stepin')
+        console.log("FIRED STEPIN")
         // add highlight when entering a step
         //d3.select(response.element).classed('active', true)
       })
       .onStepExit(function(response) {
         // trigger the stepout event
         d3.select(response.element).dispatch('stepout')
+        console.log("FIRED STEPOUT")
         // remove highlight when exiting a step
         //d3.select(response.element).classed('active', false)
       })
   </script>
+
+  <!-- A swiper utility-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 
   <!-- This is D3, our graphing library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
@@ -189,6 +223,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
   <!-- This will load the tooltips-->
   <script src="d3-tip.js"></script>
+
   <!-- Now we include our actual visualization -->
   <script src="./general-words/chart-1.js"></script>
   <script src="./words-by-style/chart-2.js"></script>
@@ -197,6 +232,10 @@
   <script src="./words-by-style/chart-5.js"></script>
   <script src="./words-by-style/chart-6.js"></script>
   <script src="./words-by-style/chart-7.js"></script>
-  <script src="./similar-artists/chart-8.js"></script>
+  <script src="./similar-artists/chart-8-steps.js"></script>
+  <script src="./words-by-artist/chart-9.js"></script>
+  <script src="./similar-artists/chart-10.js"></script>
+
+
 </body>
 </html>
