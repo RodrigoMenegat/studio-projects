@@ -122,7 +122,7 @@ top: 33%;
   padding-right: 20%;
   padding-top: 5%;
   padding-bottom: 5%;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: lighter;
 }
 
@@ -146,7 +146,6 @@ top: 33%;
 }
 
 .chart-block-white {
-  display: table;
   background-color: #ffffff;
   padding-left: 20%;
   padding-right: 20%;
@@ -224,11 +223,6 @@ to hold the absolute elements inside properly */
   left: 20%
   }
 
-/* INFORMATION BOX FOR TF-IDF CHART */
-#chart-8-info-box {
-  padding: 20%;
-  border: 8px solid #f7f7f7;
-}
 
 #table-holder {
   height: 850px;
@@ -362,4 +356,21 @@ to hold the absolute elements inside properly */
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+/* INFOBOX FOR LAST CHART */
+.infobox {
+  /*border:1px solid #f2f2f2;*/
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 20px;
+}
+
+.infobox-title {
+  /*border:1px solid #f2f2f2;/*
+  height: 60px;
+  width: 100%;
+  text-align: center;
 }

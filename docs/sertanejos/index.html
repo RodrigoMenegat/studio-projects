@@ -16,14 +16,12 @@
   <div id="tooltip"></div>
 
 <body>
+
   <div class="banner">
     <span>
       <h2>Da Boate Azul para a Casa das Primas</h2>
       <h4>uma análise comparativa das letras sertanejas</h4>
-      <p><b>por Rodrigo Menegat</br></p>
-      <!-- TO DO: ADD A SCROLL ARROW
-      <a href="#main" class="scroll-arrow">Deslize</a> 
-      -->
+      <p><b>por Rodrigo Menegat</b></br></p>
     </span>
   </div>
 
@@ -68,7 +66,6 @@
   <div id="chart-4" class="chart-block-white"></div>
 
   <div class="text-block">
-
     <p>No gráfico acima, cada círculo representa uma palavra que foi usada pelo menos uma vez nas letras que analisamos. Ele está divido em dois quadrantes: quanto mais para a esquerda, mais uma palavra aparece no sertanejo tradicional em comparação com o universitário. Quanto mais para a direita, acontece o contrário: a palavra é mais típica do sertanejo contemporâneo. No meio dessa bagunça, porém, é difícil de detectar qualquer padrão. Vamos dar uma olhada em um grupo específico de palavras de cada vez.</p>
 </div>
 
@@ -76,22 +73,22 @@
   <div id="scrolly-container" class="container">
     <div class="row">
       <div class="col-sm-4">
-        <div class="step" id="first-step">
+        <div class="step" id="first-step" style="height: 400px;">
           <p>Parece que até mesmo a maneira como sertanejos do passado e do presente bebem é diferente. "Cachaça" é uma palavra que aparece mais nas músicas tradicionais. Já cerveja algo é mais universitário. Entretanto, pelo jeito, universitário <b>mesmo</b> é ir para a balada.</p>
         </div>
-        <div class="step" id="second-step">
+        <div class="step" id="second-step" style="height: 400px;">
           <p>A maneira como os músicos falam de mulheres e de amor também revela contrastes. As referências a "esposa" são quase 40 vezes mais comuns no sertanejo tradicional. Do outro lado do espectro, estão "gatinha", "solteiro" e "pegador".
         </div>
-        <div class="step" id="third-step">
+        <div class="step" id="third-step" style="height: 400px;">
           <p>As referências à vida rural, em teoria a essência do estilo, são características do sertanejo tradicional, mas nem tanto do sertanejo universitário. "Caboclo", a palavra que é mais destacadamente tradiconal nessa análise, é típica de letras de <a href="https://www.youtube.com/watch?v=njRzM-J-Cm8">Tonico e Tinoco</a>, por exemplo.
         </div>
       </div>
       <!-- TO DO: Implement change on scrolling -->
       <div class="col-sm-8">
         <!-- Charts 5 to 7: static canvas charts -->
-        <div id="chart-5"></div>
-        <div id="chart-6"></div>
-        <div id="chart-7"></div>
+        <div id="chart-5" class="chart-block-white"></div>
+        <div id="chart-6" class="chart-block-white"></div>
+        <div id="chart-7" class="chart-block-white"></div>
       </div>
     </div>
   </div>
@@ -119,8 +116,12 @@
 <!-- SECOND SCROLLY-THING -->
 
   <div class="text-block">
-    <p>EXPLICA QUE PORRA É O ALGORITMO QUE VOCÊ TÁ USANDO PORQUE AS PESSOAS NÃO ENTENDEM ESSA MALUQUICE DE REDUZIR 99 DIMENSÕES PARA DUAS EM CADA PONTO E REPRESENTAR EM UM PLANO BIDIMENSONAL</p>
-  </div>
+    <p>Com a lista de palavras mais comuns de cara artista em mãos, podemos descobrir outro aspecto interessante: quais músicos cantam sobre temas parecidos? Outra métrica usada com frequência em análises textuais se chama "similaridade de cossenos". Apesar do nome que remete a aulas de geometria do ensino médio, é possível explicar superficialmente o que isso significa sem muita complicação: um algoritmo compara duas séries de palavras e, de acordo com quantas delas se repetem, determina o quão parecidos os dois textos são.</p>
+
+    <p>Nós calculamos a similaridade entre a lista de cinco palavras mais centrais de cada artista para descobrir quem canta sobre os mesmos temas. Depois, passamos o resultado para outro algoritmo de <i>machine-learning</i>, esse chamado <b>t-SNE</b>: <i>t-Distributed Stochastic Neighbor Embedding</i>.</p>
+
+    <p>O nome é complexo e o processo também, mas para simplificar, podemos dizer que o computador analisa todas as similaridades e discrepâncias entre os pares de artistas para encontrar a maneira mais adequada de posicioná-los em um plano, de modo que músicos semelhantes entre si fiquem perto uns dos outros. Trata-se apenas de uma aproixmação mas, ainda assim, podemos explorar visualmente quem canta sobre temas parecidos.</p>
+  </div></p>
 
   <!-- Scrolling template -->
     <div id="scrolly-container" class="container">
@@ -133,22 +134,22 @@
               <p> E, agora, vamos adicionar alguns outros artistas de sertanejo raiz. Primeiro, Cascatinha e Inhana. Perceba que as duas duplas estão perto: isso significa que elas cantam sobre temas parecidos, de acordo com nossa análise de palavras mais centrais. </p>
             </div>
             <div id="sixth-step" class="step">
-              <p> Os outros artistas do sertanejo-raiz também ficam próximos, formando um grupo no canto direito. Na extrema-esquerda, Gino e Geno destoam, assim como Amado e Antônio, em cima e no centro. </p>
+              <p> Os outros artistas do sertanejo de raiz também ficam próximos, formando um grupo no canto direito. Na extrema-esquerda, Gino e Geno destoam, assim como Amado e Antônio, em cima e no centro. </p>
             </div>
             <div id="seventh-step" class="step">
               <p> A partir de agora, vamos adicionar músicos da geração intermediária, que sucedeu o sertanejo mais tradicional e levou o gênero ao sucesso nos anos 70, 80 e 90. Talvez os primeiros representantes dessa safra tenham sido Milionário e José Rico, então começamos por eles, que ficam em uma posição central no gráfico.</p>
             </div>
             <div id="eigth-step" class="step">
-              <p>Outros clássicos são Chitãozinho e Xororó e Zezé di Camargo e Luciano. A primeira dupla fica mais perto dos representantes do sertanejo raíz, enquanto Zezé Di Camargo e Luciano foram posicionados em um canto ainda pouco povoado.</p>
+              <p>Outros clássicos são Chitãozinho e Xororó e Zezé di Camargo e Luciano. A primeira dupla fica mais perto dos representantes do sertanejo raiz, enquanto Zezé Di Camargo e Luciano foram posicionados no canto esquerdo.</p>
             </div>
             <div id="ninth-step" class="step">
               <p>Antes de irmos para o sertanejo universitário, vamos adicionar os outros músicos do sertanejo tradicional.</p>
             </div>
             <div id="tenth-step" class="step">
-              <p>Embora, na análise, tenhamos colocado todos os artistas do sertanejo atual dentro do balde 'universitário', eles são bastante diferentes entre si. Para ilustrar, vamos adicionar ao gráfico artistas diferentes de cada vez. Primeiro, aqueles que são considerados um dos pioneiros do estilo: Jorge e Mateus.</p>
+              <p>Embora, na análise, tenhamos colocado todos os artistas do sertanejo atual dentro do balde 'universitário', eles são bastante diferentes entre si. Para ilustrar, vamos adicionar ao gráfico um punhado de artistas de cada vez. Primeiro, aqueles que são considerados um dos pioneiros do estilo: Jorge e Mateus.</p>
             </div>
             <div id="eleventh-step" class="step">
-              <p>Na mesma toada, podemos adicionar outros músicos que ajudaram a definir o gênero: Ferando e Sorocaba e João Bosco e Vinícius.</p>
+              <p>Na mesma toada, podemos adicionar outros músicos que ajudaram a definir o gênero: Fernando e Sorocaba e João Bosco e Vinícius.</p>
             </div>
             <div id="twelth-step" class="step">
               <p>Agora, onde ficam os responsáveis por colocar o sertanejo universitário nas paradas nacionais, como Luan Santana, Michel Teló e Gusttavo Lima?</p>
@@ -166,10 +167,16 @@
       </div>
     </div>
 
-    <!-- End of scroll. Beggining final, fixed chart -->
-    <div id="chart-10" class="chart-block-white"></div>
-
-
+  <!-- End of scroll. Beggining final, fixed chart -->
+  <div class="banner">
+    <div id="chart-10"></div>
+    <div id="chart-10-infobox-title" class="infobox-title">
+      <h3> Selecione um artista </h3>
+    </div>
+    <div id="chart-10-infobox" class="infobox"></div>
+  </div>
+  
+  <!-- Space in the bottom -->
   <footer></footer>
 
   <!-- This is D3, our graphing library -->
@@ -195,7 +202,7 @@
       .setup({
         offset: 0.55, // how far from the top?
         step: '.step', // class for stepping through
-        debug: true, // shows the line
+        debug: false, // shows the line
         container: 'container'
       })
       .onStepEnter(function(response) {

@@ -3,7 +3,7 @@
 (function() {
   var margin = { top: 50, left: 80, right: 80, bottom: 50 },
     height = 400 - margin.top - margin.bottom,
-    width = 1200 - margin.left - margin.right;
+    width = 1000 - margin.left - margin.right;
 
 // An svg that lies behind the canvas
   var svgHolder = d3.select("#chart-6")

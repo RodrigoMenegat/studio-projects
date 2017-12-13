@@ -22,7 +22,7 @@ var universitario = ['Alex e Ronaldo', 'Bruninho e Davi', 'Carlos e Jader', 'Chr
 'João Neto & Frederico', 'Juan Marcus e Vinícius', 'Lucas Reis e Thácio', 'Marcos e Belutti', 
 'Maria Cecilia e Rodolfo', 'Maiara e Maraisa', 'Marília Mendonça', 'Matheus e Kauan', 'Michel Teló',
 'Munhoz e Mariano', 'Naiara Azevedo', 'Paula Fernandes', 'Simone e Simaria', 'Pedro Paulo e Alex',
-'Thaeme e Thiago', 'Zé Henrique e Gabriel', 'Zé Neto e Cristiano', 'Brenno Reis & Marco Viola'];
+'Thaeme e Thiago', 'Zé Henrique e Gabriel', 'Zé Neto e Cristiano'];
 console.log(universitario)
 
 
@@ -32,7 +32,7 @@ var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Mar
 'João Paulo e Daniel', 'Jorge Henrique e Christiano', 'João Pedro e Cristiano', 'Matogrosso e Mathias',
 'Milionário e José Rico', 'Pardinho e Pardal', 'Rick & Renner', 'Rionegro & Solimões', 
 'Peão Carreiro e Zé Paulo', 'Tião Carreiro & Paraíso', 'Vieira e Vieirinha', 'Zezé Di Camargo e Luciano',
-'Zé Mulato & Cassiano'];
+'Zé Mulato & Cassiano', 'Brenno Reis & Marco Viola'];
 
   var svg = d3.select("#chart-8")
     .append("svg")

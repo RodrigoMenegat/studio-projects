@@ -21,7 +21,7 @@ var universitario = ['Alex e Ronaldo', 'Bruninho e Davi', 'Carlos e Jader', 'Chr
 'João Neto & Frederico', 'Juan Marcus e Vinícius', 'Lucas Reis e Thácio', 'Marcos e Belutti', 
 'Maria Cecilia e Rodolfo', 'Maiara e Maraisa', 'Marília Mendonça', 'Matheus e Kauan', 'Michel Teló',
 'Munhoz e Mariano', 'Naiara Azevedo', 'Paula Fernandes', 'Simone e Simaria', 'Pedro Paulo e Alex',
-'Thaeme e Thiago', 'Zé Henrique e Gabriel', 'Zé Neto e Cristiano', 'Brenno Reis & Marco Viola'];
+'Thaeme e Thiago', 'Zé Henrique e Gabriel', 'Zé Neto e Cristiano'];
 
 var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Marciano',
 'Althair & Alexandre', 'André e Adriano', 'Bruno e Marrone', 'Chitãozinho e Xororó',
@@ -29,7 +29,7 @@ var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Mar
 'João Paulo e Daniel', 'Jorge Henrique e Christiano', 'João Pedro e Cristiano', 'Matogrosso e Mathias',
 'Milionário e José Rico', 'Pardinho e Pardal', 'Rick & Renner', 'Rionegro & Solimões', 
 'Peão Carreiro e Zé Paulo', 'Tião Carreiro & Paraíso', 'Vieira e Vieirinha', 'Zezé Di Camargo e Luciano',
-'Zé Mulato & Cassiano'];
+'Zé Mulato & Cassiano', 'Brenno Reis & Marco Viola'];
 
   var svg = d3.select("#chart-10")
     .append("svg")
@@ -73,6 +73,8 @@ var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Mar
       .attr("text-anchor","middle")
       .attr("font-weight","bold")
       .attr("font-size",32)
+      .attr("fill","#ffffff")
+
 
     svg.append("text")
       .text("Selecione um círculo para descobrir quais são os artistas com letras mais semelhantes")
@@ -82,6 +84,7 @@ var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Mar
       .attr("text-anchor","middle")
       .attr("font-weight","light")
       .attr("font-size",20)
+      .attr("fill","#ffffff")
 
     svg.selectAll(".artist-node")
       .data(datapoints)
@@ -111,8 +114,57 @@ var tradicional = ['Cezar & Paulinho', 'Gilberto e Gilmar', 'João Mineiro e Mar
           return 'purple';
         }
       })
-      .attr("opacity", 0.6)
+      .attr("opacity", 0.8)
+      .on('mouseover.infobox-title', function(d){
+        var infoBox = d3.select("#chart-10-infobox-title")
+        var title = d.artist;
+        infoBox.html(function(d) {
+          return "<h3>" + title + "</h3>"
+        }) // End of function (d)
+      }) // End of on
+      .on('mouseout.infobox-title', function(d){
+        var infoBox = d3.select("#chart-10-infobox-title")
+        infoBox.html(function(d) {
+          return "<h3>SELECIONE UM ARTISTA</h3>"
+        }) // End of function(d)
+    }) // End of on
+      .on('mouseover.infobox', function(d){
+        var infoBox = d3.select("#chart-10-infobox")
+        var title = d.artist
+        var similarArtists = d.common_artists
+        infoBox.html(function(d) {
+          return "<b>Artistas mais semelhantes:</b></br>" +
+              "1. " + similarArtists[0] + "</br>" +
+              "2. " + similarArtists[1] + "</br>" +
+              "3. " + similarArtists[2] + "</br>" +
+              "4. " + similarArtists[3] + "</br>" +
+              "5. " + similarArtists[4] + "</br>" +
+          "</ol>"
+         }) // End of function (d)
+         .style("visibility","visible")
+      }) // End of on
+      .on('mouseout.infobox', function(d){
+        var infoBox = d3.select("#chart-10-infobox")
+        infoBox.html(function(d) {
+          return ""
+        }) // End of function(d)
+        .style("visibility","hidden")
+    }) // End of on
+    .on("mouseover.circle", function(d){
+      var circle = d3.select(this)
+        .attr("stroke", "white")
+        .attr("stroke-width", 2)
+      circle.raise()
+    }) // End of on
+    .on("mouseout.circle", function(d){
+      var circle = d3.select(this)
+        .attr("stroke", "")
+        .attr("stroke-width", 0)
+      circle.raise()
+    })
 
-  }
 
-})();
+
+  } // End of .defer()
+
+})(); // End of functionalities
