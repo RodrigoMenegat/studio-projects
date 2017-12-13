@@ -48,7 +48,7 @@
     // Adding a subtitle
     svg.append("text")
       .attr("class",".subtitle")
-      .text("Appearences in each 10k words, considering all sugenres of the style")
+      .text("Appearences in each 10k words, considering all subgenres of the style")
       .attr("text-anchor","middle")
       .attr("font-size",18)
       .attr("font-weight","light")
