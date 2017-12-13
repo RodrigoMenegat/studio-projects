@@ -1,0 +1,252 @@
+<html>
+  <head>
+    <title>From 'Boate Azul' to 'Casa das Primas' - a comparative analysis of sertanejo music lyrics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1000, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+
+
+
+  </head>
+
+  <!-- Tooltip div is only called in when user click in item on the scatterplot -->
+  <div id="tooltip"></div>
+
+<body>
+
+  <div class="banner">
+    <span>
+      <h2>From 'Boate Azul' to 'Casa das Primas'</h2>
+      <h4>a comparative analyzis of sertanejo music lyrics</h4>
+      <p><b>by Rodrigo Menegat</b></br></p>
+    </span>
+  </div>
+
+  <div id="lead" class="highlight-text-block-orange">
+    <p>In Brazil, the 'sertanejo music' - pretty munch an equivalent to american country in terms of traditionalism and worship for a rural lifestyle - has changed a lot in the last decade. A new generation of musicians dubbed 'sertanejos universitários' (university sertanejos) has introduced diverging elements into the mix. The gentle guitar strings of acts such as 'Tonico e Tinoco', which were big on the 50s and 60s, have little do to with the upbeat rhythm of songs such as 'Ai Se Eu Te Pego', a 2011 international hit by Michel Teló.</p>
+  </div>
+
+  <div id="sublead" class="highlight-text-block-purple">
+    <p>The melody, though, wasn't the only thing that changed. In the transition between mornings in the farm and clubbing nights, the lyrical themes of the genre also went through a significant transformation. But how exactly did this happen? To answer this question, <b>piauí</b> analyzed more than 8000 songs by 99 artists. This data-driven essay shows how we went from <a href="https://www.youtube.com/watch?v=aC0jp0lIgVE">'Boate Azul'</a> to <a href="https://www.youtube.com/watch?v=tpoYqrqV670">'Casa das Primas'</a>.</p>
+  </div>  
+
+
+  <div id="chart-1" class="chart-block-white"></div>
+
+  <div class="text-block">
+
+    <p>One way to find out which subjects are important for an artist is to count words. If a singer uses the term 'car' several times, for instance, we can assume that cars are a relevant theme in his work. The same goes for musical genres: if, in the set of songs that we analyzed, a certain expression is repeated very often, it means that the musical genre as a whole cares about such concept.</p>
+
+    <p>In the chart above, we show which are the most common words in 'sertanejo music' - in every style, regardless if it is the most traditional or the newest trend. Nothing too surprising: 'love' is by far the most used term, appearing in a ratio of 219 times out of every 10,000 words. To confirm the romantic vocation of this music, the silver medal went to 'heart'.</p>
+
+    <p>That's interesting, but not so much. What we really want to know is how these themes have changed since acts like <i>João Bosco e Vinícius</i> and <i>Jorge e Mateus</i> began to transform sertanejo music into what it is today. To do this, we need to find out which words appear often in older songs and are less common in the present.</p>
+
+</div>
+
+  <div id="table-holder">
+    <div id='chart-2', class="chart-block-white-left"></div>
+    <div id='chart-3', class="chart-block-white-right"></div>
+  </div>
+
+  <div class="text-block">
+
+  <p>The tables above show which are the most characteristic words of each of the genres - that is, which words appear more often in the traditional sertanejo in comparison with the university sertanejo and vice versa.</p>
+
+  <p>In our comparison, we grouped all the artists that don't play university sertanejo under the label "traditional". Acts such as <i>Cascatinha e Inhana</i> are certainly different from <i>'Leandro e Leonardo'</i>, but the goal here is to measure how diffrent from the rest the new generation is. The math used is straightforward: we calculated how many times a word appears in each style and divided one value by the other.</p>
+
+  <p>Some patterns start to appear: terms like "fields" and "caboclo" (a man from the countryside, a country bumpkin) appear almost exclusively in the traditional style. The more characteristic words of university sertanejo usually have lower usage ratios, probably because they are repeated to exhaustion in a handful of songs. However, the term "clubbing" is quite representative of the style and appears more than 15 times out of every 10,000 words.</p>
+
+  <p>This list, however, shows only the 20 most central words of each genre. We want to take a look at <b> all</b> of them.</p>
+</div>
+
+  <!-- Chart-4: interactive canvas chart -->
+  <div id="chart-4" class="chart-block-white"></div>
+
+  <div class="text-block">
+    <p>In the chart above, each circle represents a word that was used at least once in the lyrics we analyzed. It's divided into two halves: the further to the left a circle is, the more a word appears in the traditional genre compared to the university sertanejo. If a circle is way off to the right, the opposite is true: that word is more typical of the new songs.</p>
+
+    <p>This surely looks fun, but it's difficult to detect any pattern in such a mess. Let's take a look at a specific group of words at a time.</p>
+</div>
+
+<!-- Scrolling template -->
+  <div id="scrolly-container" class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="step" id="first-step" style="height: 400px;">
+          <p>It seems that even the way that sertanejos of past and present drink is different. "Cachaça" (a strong liquor) is a word that appears more in traditional songs. In the other hand, mentions of beer ("cerveja") are more frequent among the university sertanejo singers. Anyway,what those young guys <b>really</b> like to do is to go clubbing ("balada").</p>
+        </div>
+        <div class="step" id="second-step" style="height: 400px;">
+          <p>The way musicians talk about women and love also reveals some interesting contrast. Mentions to the wife ("esposa") are almost 40 times more likely to happen in the traditional style. On the other side of the spectrum are words such as hottie ("gatinha"), single ("solteiro") and player ("pegador").</p>
+        </div>
+        <div class="step" id="third-step" style="height: 400px;">
+          <p>References to rural life, in theory the essence of sertanejo music, are characteristic of the traditional sertanejo, but not so much of the newest songs. "Caboclo," the word that was revealed to be the most traditional in this analysis, is typical in songs of the duo <a href="https://www.youtube.com/watch?v=njRzM-J-Cm8"> 'Tonico e Tinoco' </a>, for instance.</p> Terms like countryside ("sertão") farmer ("lavrador") and farm ("fazenda") are also almost exclusive to the older songs.
+        </div>
+      </div>
+      <!-- TO DO: Implement change on scrolling -->
+      <div class="col-sm-8">
+        <!-- Charts 5 to 7: static canvas charts -->
+        <div id="chart-5" class="chart-block-white"></div>
+        <div id="chart-6" class="chart-block-white"></div>
+        <div id="chart-7" class="chart-block-white"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-block">
+    <p> Now that we know a little about the words that define each one of the genres, let's take a look at the themes that are most present in the lyrics of each artist. We could apply the same technique we used in the previous analysis - that is, divide the number of times a word is used by an artist for the times it is used in general. However, we have chosen to do this in a faster way by using <i>natural language processing (NLP)</i> techniques. NLP is a branch of computer science that, in a rough summarization, studies the structure of human language and tries to replicate it by using statistical models and algorithms. </p>
+
+    <p>We will apply a technique called <b>tf-idf:<i> term frequency-inverse document frequency </i></b>. It compares how many times a given word appears in a document - or, in our case, in the lyrics of an artist - and in the sum of all documents. Thus, words such as 'love' or 'heart', which are very common in all songs, are considered less central than a term like 'caboclo' for the lyrics of <i>Tonico and Tinoco</i>, since the latter, even though it appear less often in an absolute count, is more characteristic of this act.</p>
+  </div>
+
+  <!-- A swiper/slideshow element that displays the artists and their most central words -->
+  <!-- Swiper -->
+  <div class="swiper-container">
+      <h2>The most central words of each artist</h2>
+      <b>Swipe to see more musicians </b>
+    <div id='chart-9' class="swiper-wrapper">
+      <!-- elements added dinamycally using chart-9.js script -->
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <!-- End of swiper -->
+
+<!-- SECOND SCROLLY-THING -->
+
+  <div class="text-block">
+    <p>With the list of most common words of each artist at hand, we can dig for another interesting insight: which musicians sing about similar themes?</p> 
+
+    <p>Another metric often used in textual analysis is called "cosine similarity". Despite the name that may bring back unpleasant memories of high school geometry classes, it is possible to explain superficially what this concept means without unnecessary complication. First, we ran our data through an algorithm that compares two arrays of words and, according to how many of them are repeated, determines how similar two texts are.</p>
+
+    <p>After that, we passed the results to another machine-learning algorithm, this one called t-SNE: <i>Distributed Stochastic Neighbor Embedding </i>.</p>
+
+    <p> The name sounds scary (and it kind of is), but for now we will simply say that the computer analyzes the similarity rating between each pairs of artist. Then, it tries to find the best way to position them in a plane, so that musicians similar to each other stay close. This gives us just an approximation, but we can still explore visually who sings about similar themes. </p>
+  </div></p>
+
+  <!-- Scrolling template -->
+    <div id="scrolly-container" class="container">
+      <div class="row">
+          <div class="col-sm-4">
+            <div id="fourth-step" class="step">
+              <p>For starts, let's add a circle that represents the most traditional of the sertanejo duos: <i>Tonico e Tinoco</i>. </p>
+            </div>
+            <div id="fifth-step" class="step">
+              <p> Now, let's add some other traditional artists. First, <i>Cascatinha e Inhana</i>. Notice that the two acts are close to each other: that means they sing about similar themes, according to our analysis of more central words.</p>
+            </div>
+            <div id="sixth-step" class="step">
+              <p> The other artists from their style of sertanejo music are also nearby, forming a cluster in the right corner. On the extreme left, <i>Gino e Geno</i> appear to be deviants, as do <i>Amado e Antônio</i>, which are above in the center. </p>
+            </div>
+            <div id="seventh-step" class="step">
+              <p> From now on, we will add musicians from an in-between era, who succeeded the more traditional sertanejo and took the genre to mainstream success in the 70s, 80s and 90s. Perhaps the first of those acts was <i>Milionário e José Rico</i>, so we start with them, which are in a central position in the chart.</p>
+            </div>
+            <div id="eigth-step" class="step">
+              <p>Other classics are <i>Chitãozinho e Xororó</i> and <i>Zezé di Camargo e Luciano</i>. The first pair is closer to the traditional cluster, while Zezé Di Camargo and Luciano were positioned in the left corner.</p>
+            </div>
+            <div id="ninth-step" class="step">
+              <p>Before me move to the university sertanejo, let's add the rest of the traditional musicians.</p>
+            </div>
+            <div id="tenth-step" class="step">
+              <p>Although, in the analysis, we have put all the artists from the contemporary sertanejo style into the 'university' bucket, they are quite different from each other. To illustrate, let's add a handful of artists to the chart at a time. First, we draw those who are considered one of the pioneers of style: <i>Jorge e Mateus</i>.</p>
+            </div>
+            <div id="eleventh-step" class="step">
+              <p>In the same way, we add other musicians that helped defining the genre: <i>Fernando e Sorocaba</i> and <i>João Bosco e Vinícius</i>.</p>
+            </div>
+            <div id="twelth-step" class="step">
+              <p>Now, where should we draw the artists that made university sertanejo into a hit-making style, such as <i>Luan Santana, Michel Teló</i> e <i>Gusttavo Lima</i>?</p>
+            </div>
+            <div id="thirteenth-step" class="step">
+              <p>And what about the new hot thing, the female-only acts such as <i>Maiara e Maraisa, Simone e Simaria, Naiara Azevedo, Paula Fernandes</i> and <i>Marília Mendonça</i>?</p>
+            </div>
+            <div id="fourteenth-step" class="step">
+              <p>And, finally, we add all the rest. Note how the university sertanejo forms a cluster from the center to the left.</p>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div id="chart-8" class="sticky"></div>
+        </div>
+      </div>
+    </div>
+
+  <!-- End of scroll. Beggining final, fixed chart -->
+  <div class="banner">
+    <div id="chart-10"></div>
+    <div id="chart-10-infobox-title" class="infobox-title">
+      <h3> Select an artist </h3>
+    </div>
+    <div id="chart-10-infobox" class="infobox"></div>
+  </div>
+  
+  <!-- Space in the bottom -->
+  <footer></footer>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/scrollama'></script>
+  <script src='stickyfill.min.js'></script>
+
+   <!-- Include our scrolling library -->
+   <script src='https://unpkg.com/scrollama'></script>
+   <!-- Allows sticky implementation of scrollytelling -->
+   <script src='stickyfill.min.js'></script>
+   <script>
+    /* Allow position: sticky to work in old browsers */
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+    scroller
+      .setup({
+        offset: 0.55, // how far from the top?
+        step: '.step', // class for stepping through
+        debug: false, // shows the line
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+        d3.select(response.element).dispatch('stepin')
+        console.log("FIRED STEPIN")
+        // add highlight when entering a step
+        //d3.select(response.element).classed('active', true)
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+        d3.select(response.element).dispatch('stepout')
+        console.log("FIRED STEPOUT")
+        // remove highlight when exiting a step
+        //d3.select(response.element).classed('active', false)
+      })
+  </script>
+
+  <!-- A swiper utility-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+  <!-- This is an annotation add-on-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+  <!-- This will load the tooltips-->
+  <script src="d3-tip.js"></script>
+
+  <!-- Now we include our actual visualization -->
+  <script src="./general-words/chart-1.js"></script>
+  <script src="./words-by-style/chart-2.js"></script>
+  <script src="./words-by-style/chart-3.js"></script>
+  <script src="./words-by-style/chart-4.js"></script>
+  <script src="./words-by-style/chart-5.js"></script>
+  <script src="./words-by-style/chart-6.js"></script>
+  <script src="./words-by-style/chart-7.js"></script>
+  <script src="./similar-artists/chart-8-steps.js"></script>
+  <script src="./words-by-artist/chart-9.js"></script>
+  <script src="./similar-artists/chart-10.js"></script>
+
+
+</body>
+</html>
